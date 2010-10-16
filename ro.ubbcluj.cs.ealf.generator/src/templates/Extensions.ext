@@ -1,4 +1,0 @@
-import ro::ubbcluj::cs::ealf::eAlf;
-
-sortedGreetings(Model this) :
-	this.greetings.sortBy(g|g.name.toLowerCase());
