@@ -7,60 +7,54 @@ package ro.ubbcluj.cs.ealf.parser.antlr.internal;
 import org.eclipse.xtext.parser.antlr.Lexer;
 }
 
-T11 : 'packagedElement' ;
+T11 : 'package' ;
 T12 : '{' ;
-T13 : ',' ;
-T14 : '}' ;
-T15 : 'Package' ;
-T16 : 'name' ;
-T17 : 'visibility' ;
-T18 : 'Property' ;
-T19 : 'isStatic' ;
-T20 : 'type' ;
-T21 : 'Operation' ;
-T22 : 'isAbstract' ;
-T23 : 'concurrency' ;
-T24 : 'Class' ;
-T25 : 'isActive' ;
-T26 : 'ownedAttribute' ;
-T27 : 'nestedClassifier' ;
-T28 : 'ownedOperation' ;
-T29 : 'Integer' ;
-T30 : 'Boolean' ;
-T31 : 'UnlimitedNatural' ;
-T32 : 'LiteralInteger' ;
-T33 : 'value' ;
-T34 : 'LiteralString' ;
-T35 : 'LiteralBoolean' ;
-T36 : 'LiteralUnlimitedNatural' ;
-T37 : 'LiteralNull' ;
-T38 : 'public' ;
-T39 : 'private' ;
-T40 : 'protected' ;
-T41 : 'package' ;
-T42 : 'sequential' ;
-T43 : 'guarded' ;
-T44 : 'concurrent' ;
+T13 : '}' ;
+T14 : ':' ;
+T15 : ';' ;
+T16 : '(' ;
+T17 : ')' ;
+T18 : 'class' ;
+T19 : 'ownedAttribute' ;
+T20 : ',' ;
+T21 : 'nestedClassifier' ;
+T22 : 'ownedOperation' ;
+T23 : 'Integer' ;
+T24 : 'Boolean' ;
+T25 : 'UnlimitedNatural' ;
+T26 : 'LiteralInteger' ;
+T27 : 'name' ;
+T28 : 'value' ;
+T29 : 'LiteralString' ;
+T30 : 'LiteralBoolean' ;
+T31 : 'LiteralUnlimitedNatural' ;
+T32 : 'LiteralNull' ;
+T33 : 'public' ;
+T34 : 'private' ;
+T35 : 'protected' ;
+T36 : 'sequential' ;
+T37 : 'guarded' ;
+T38 : 'concurrent' ;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1841
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1597
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1843
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1599
 RULE_INT : ('0'..'9')+;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1845
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1601
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1847
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1603
 RULE_ML_COMMENT : '/*' ( options {greedy=false;} : . )*'*/';
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1849
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1605
 RULE_SL_COMMENT : '//' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1851
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1607
 RULE_WS : (' '|'\t'|'\r'|'\n')+;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1853
+// $ANTLR src "../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g" 1609
 RULE_ANY_OTHER : .;
 
 
