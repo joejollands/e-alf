@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Uml2EditorContribution
+Bundle-SymbolicName: ro.ubbcluj.cs.ealf.uml2editor;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: ro.ubbcluj.cs.ealf.uml2editor.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.uml2.uml;bundle-version="3.1.1",
+ org.eclipse.uml2.uml.editor;bundle-version="3.1.0"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
