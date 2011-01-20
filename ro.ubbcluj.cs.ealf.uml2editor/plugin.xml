@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editorActions">
+      <editorContribution
+            id="ro.ubbcluj.cs.ealf.uml2editor.editorContribution"
+            targetID="org.eclipse.uml2.uml.editor.presentation.UMLEditorID">
+         <action
+               class="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorActionDelegate"
+               id="ro.ubbcluj.cs.ealf.uml2editor.openealfaction"
+               label="Open EAl&amp;f"
+               menubarPath="org.eclipse.uml2.umlMenuID/additions"
+               style="push">
+            <enablement>
+               <objectClass
+                     name="org.eclipse.uml2.uml.Operation">
+               </objectClass>
+            </enablement>
+         </action>
+      </editorContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="ro.ubbcluj.cs.ealf.uml2editor.objectContribution"
+            objectClass="org.eclipse.uml2.uml.Operation">
+         <action
+               class="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorActionDelegate"
+               id="ro.ubbcluj.cs.ealf.uml2editor.openealfpopupaction"
+               label="Open EAl&amp;f"
+               menubarPath="additions">
+            <enablement>
+               <objectClass
+                     name="org.eclipse.uml2.uml.Operation">
+               </objectClass>
+            </enablement>
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
