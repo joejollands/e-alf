@@ -7,7 +7,8 @@
             id="ro.ubbcluj.cs.ealf.uml2editor.editorContribution"
             targetID="org.eclipse.uml2.uml.editor.presentation.UMLEditorID">
          <action
-               class="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorActionDelegate"
+               class="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorActionDelegate:ro.ubbcluj.cs.ealf.uml2editor.openEAlfEditorCommand"
+               enablesFor="1"
                id="ro.ubbcluj.cs.ealf.uml2editor.openealfaction"
                label="Open EAl&amp;f"
                menubarPath="org.eclipse.uml2.umlMenuID/additions"
@@ -28,6 +29,7 @@
             objectClass="org.eclipse.uml2.uml.Operation">
          <action
                class="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorActionDelegate"
+               enablesFor="1"
                id="ro.ubbcluj.cs.ealf.uml2editor.openealfpopupaction"
                label="Open EAl&amp;f"
                menubarPath="additions">
@@ -38,6 +40,28 @@
             </enablement>
          </action>
       </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="ro.ubbcluj.cs.ealf.uml2editor.openEAlfEditorCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="Enter">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="ro.ubbcluj.cs.ealf.uml2editor.EAlfCategory"
+            defaultHandler="ro.ubbcluj.cs.ealf.uml2editor.actions.OpenEAlfEditorHandler"
+            id="ro.ubbcluj.cs.ealf.uml2editor.openEAlfEditorCommand"
+            name="openEAlfEditorCommand">
+      </command>
+      <category
+            id="ro.ubbcluj.cs.ealf.uml2editor.EAlfCategory"
+            name="EAlfCategory">
+      </category>
    </extension>
 
 </plugin>
