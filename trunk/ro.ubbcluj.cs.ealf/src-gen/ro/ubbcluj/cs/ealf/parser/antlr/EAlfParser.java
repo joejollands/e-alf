@@ -42,7 +42,7 @@ public class EAlfParser extends org.eclipse.xtext.parser.antlr.AbstractAntlrPars
 	
 	@Override 
 	protected String getDefaultRuleName() {
-		return "Model";
+		return "PackageableElement";
 	}
 	
 	public EAlfGrammarAccess getGrammarAccess() {
