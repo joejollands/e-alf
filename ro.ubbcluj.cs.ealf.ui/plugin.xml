@@ -146,5 +146,12 @@
             class="ro.ubbcluj.cs.ealf.ui.EAlfExecutableExtensionFactory:org.eclipse.xtext.ui.editor.quickfix.MarkerResolutionGenerator">
       </markerResolutionGenerator>
    </extension>
+   <extension
+         point="org.eclipse.ui.elementFactories">
+      <factory
+            class="ro.ubbcluj.cs.ealf.ui.extra.EAlfEditorInputFactory"
+            id="ro.ubbcluj.cs.ealf.ui.extra.EAlfEditorInputFactory">
+      </factory>
+   </extension>
 
 </plugin>
