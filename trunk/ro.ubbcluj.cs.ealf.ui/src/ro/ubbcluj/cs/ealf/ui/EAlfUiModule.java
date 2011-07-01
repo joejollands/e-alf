@@ -4,6 +4,13 @@
 package ro.ubbcluj.cs.ealf.ui;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
+import org.eclipse.xtext.ui.editor.model.IResourceForEditorInputFactory;
+import org.eclipse.xtext.ui.editor.model.XtextDocumentProvider;
+import org.eclipse.xtext.ui.resource.IResourceSetProvider;
+
+import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceForIEditorInputFactory;
+import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider;
+import ro.ubbcluj.cs.ealf.ui.extra.EAlfXtextDocumentProvider;
 
 /**
  * Use this class to register components to be used within the IDE.
@@ -12,4 +19,21 @@ public class EAlfUiModule extends ro.ubbcluj.cs.ealf.ui.AbstractEAlfUiModule {
 	public EAlfUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
 	}
+
+	// contributed by ro.ubbcluj.cs.ealf.ui.extra.EAlfXtextDocumentProvider
+	public Class<? extends XtextDocumentProvider> bindDocumentProvider() {
+		return EAlfXtextDocumentProvider.class;
+	}
+
+	// contributed by
+	// ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceForIEditorInputFactory
+	public Class<? extends IResourceForEditorInputFactory> bindIResourceForEditorInputFactory() {
+		return EAlfResourceForIEditorInputFactory.class;
+	}
+
+	// contributed by ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider
+	public Class<? extends IResourceSetProvider> bindIResourceSetProvider() {
+		return EAlfResourceSetProvider.class;
+	}
+
 }
