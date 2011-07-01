@@ -7,6 +7,10 @@ Bundle-Activator: ro.ubbcluj.cs.ealf.uml2editor.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.uml2.uml;bundle-version="3.1.1",
- org.eclipse.uml2.uml.editor;bundle-version="3.1.0"
+ org.eclipse.uml2.uml.editor;bundle-version="3.1.0",
+ ro.ubbcluj.cs.ealf;bundle-version="1.0.0",
+ org.eclipse.xtext;bundle-version="1.0.1",
+ ro.ubbcluj.cs.ealf.ui;bundle-version="1.0.0",
+ org.eclipse.ui.editors;bundle-version="3.6.1"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

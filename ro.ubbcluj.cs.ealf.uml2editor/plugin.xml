@@ -47,7 +47,7 @@
             commandId="ro.ubbcluj.cs.ealf.uml2editor.openEAlfEditorCommand"
             contextId="org.eclipse.ui.contexts.window"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
-            sequence="Enter">
+            sequence="F6">
       </key>
    </extension>
    <extension
