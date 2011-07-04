@@ -6,7 +6,7 @@ import org.eclipse.core.commands.ExecutionException;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.jface.viewers.TreeSelection;
 import org.eclipse.ui.IEditorDescriptor;
-import org.eclipse.ui.IEditorInput;
+import org.eclipse.ui.IEditorPart;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.IWorkbenchWindow;
@@ -79,10 +79,14 @@ public class OpenEAlfEditorHandler extends AbstractHandler {
 
 			if (element.eResource() == comment.eResource()) {
 				elementURI = EAlfUtil.getEAlfURI(umlURI, commentFragment);
-				System.out.println(elementURI);
+				EAlfUtil.controlActivity(umlEditor, activity, comment,
+						elementURI);
 			} else {
 				elementURI = element.eResource().getURI();
 			}
+
+			// EAlfUMLCommentsListener listener = new
+			// EAlfUMLCommentsListener().//(comment.getOwner());
 
 			NamedElement ownerElement = element;
 			while (ownerElement != null && ownerElement instanceof NamedElement) {
@@ -126,14 +130,15 @@ public class OpenEAlfEditorHandler extends AbstractHandler {
 			IWorkbenchPage page = win.getActivePage();
 
 			IEditorDescriptor editorDescriptor;
-			IEditorInput editorInput;
+			EAlfEditorInput editorInput;
 
 			editorDescriptor = PlatformUI.getWorkbench().getEditorRegistry()
 					.getDefaultEditor(".ealf");
 			editorInput = new EAlfEditorInput(umlURI, elementURI);
 
-			page.openEditor(editorInput, editorDescriptor.getId(), true,
-					IWorkbenchPage.MATCH_ID + IWorkbenchPage.MATCH_INPUT);
+			IEditorPart newPage = page.openEditor(editorInput,
+					editorDescriptor.getId(), true, IWorkbenchPage.MATCH_ID
+							+ IWorkbenchPage.MATCH_INPUT);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
