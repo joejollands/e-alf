@@ -20,41 +20,43 @@ T20 : 'operation' ;
 T21 : '(' ;
 T22 : ')' ;
 T23 : 'activity' ;
-T24 : 'for' ;
-T25 : 'action' ;
-T26 : 'class' ;
-T27 : 'ownedAttribute' ;
-T28 : ';' ;
-T29 : 'nestedClassifier' ;
-T30 : ',' ;
-T31 : 'ownedOperation' ;
-T32 : 'LiteralInteger' ;
-T33 : 'value' ;
-T34 : 'name' ;
-T35 : 'LiteralString' ;
-T36 : 'LiteralBoolean' ;
-T37 : 'LiteralUnlimitedNatural' ;
-T38 : 'LiteralNull' ;
+T24 : '[' ;
+T25 : 'specification for' ;
+T26 : ']' ;
+T27 : 'variable' ;
+T28 : 'class' ;
+T29 : 'ownedAttribute' ;
+T30 : ';' ;
+T31 : 'nestedClassifier' ;
+T32 : ',' ;
+T33 : 'ownedOperation' ;
+T34 : 'LiteralInteger' ;
+T35 : 'value' ;
+T36 : 'name' ;
+T37 : 'LiteralString' ;
+T38 : 'LiteralBoolean' ;
+T39 : 'LiteralUnlimitedNatural' ;
+T40 : 'LiteralNull' ;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4716
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5038
 RULE_ID : '^'? ('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'_'|'0'..'9')*;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4718
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5040
 RULE_INT : ('0'..'9')+;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4720
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5042
 RULE_STRING : ('"' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'"')))* '"'|'\'' ('\\' ('b'|'t'|'n'|'f'|'r'|'"'|'\''|'\\')|~(('\\'|'\'')))* '\'');
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4722
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5044
 RULE_ML_COMMENT : '/*' ( options {greedy=false;} : . )*'*/';
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4724
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5046
 RULE_SL_COMMENT : '//' ~(('\n'|'\r'))* ('\r'? '\n')?;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4726
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5048
 RULE_WS : (' '|'\t'|'\r'|'\n')+;
 
-// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 4728
+// $ANTLR src "../ro.ubbcluj.cs.ealf.ui/src-gen/ro/ubbcluj/cs/ealf/ui/contentassist/antlr/internal/InternalEAlf.g" 5050
 RULE_ANY_OTHER : .;
 
 

@@ -8,6 +8,7 @@ import org.eclipse.xtext.ui.editor.model.IResourceForEditorInputFactory;
 import org.eclipse.xtext.ui.editor.model.XtextDocumentProvider;
 import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 
+import ro.ubbcluj.cs.ealf.ui.extra.EAlfCrossReferenceSerializer;
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceForIEditorInputFactory;
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider;
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfXtextDocumentProvider;
@@ -34,6 +35,10 @@ public class EAlfUiModule extends ro.ubbcluj.cs.ealf.ui.AbstractEAlfUiModule {
 	// contributed by ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider
 	public Class<? extends IResourceSetProvider> bindIResourceSetProvider() {
 		return EAlfResourceSetProvider.class;
+	}
+
+	public Class<? extends org.eclipse.xtext.parsetree.reconstr.ITokenSerializer.ICrossReferenceSerializer> bindICrossReferenceSerializer() {
+		return EAlfCrossReferenceSerializer.class;
 	}
 
 }
