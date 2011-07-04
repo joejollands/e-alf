@@ -19,11 +19,12 @@ public class InternalEAlfLexer extends Lexer {
     public static final int T27=27;
     public static final int T26=26;
     public static final int T25=25;
-    public static final int Tokens=39;
+    public static final int Tokens=41;
     public static final int T24=24;
     public static final int EOF=-1;
     public static final int RULE_SL_COMMENT=8;
     public static final int T23=23;
+    public static final int T40=40;
     public static final int T22=22;
     public static final int T21=21;
     public static final int T20=20;
@@ -35,6 +36,7 @@ public class InternalEAlfLexer extends Lexer {
     public static final int T37=37;
     public static final int T12=12;
     public static final int T13=13;
+    public static final int T39=39;
     public static final int T14=14;
     public static final int T34=34;
     public static final int RULE_WS=9;
@@ -244,11 +246,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT21() throws RecognitionException {
         try {
             int _type = T21;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:20:5: ( 'for' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:20:7: 'for'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:20:5: ( '[' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:20:7: '['
             {
-            match("for"); 
-
+            match('['); 
 
             }
 
@@ -263,10 +264,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT22() throws RecognitionException {
         try {
             int _type = T22;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:21:5: ( 'action' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:21:7: 'action'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:21:5: ( 'specification for' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:21:7: 'specification for'
             {
-            match("action"); 
+            match("specification for"); 
 
 
             }
@@ -282,11 +283,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT23() throws RecognitionException {
         try {
             int _type = T23;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:22:5: ( 'class' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:22:7: 'class'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:22:5: ( ']' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:22:7: ']'
             {
-            match("class"); 
-
+            match(']'); 
 
             }
 
@@ -301,10 +301,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT24() throws RecognitionException {
         try {
             int _type = T24;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:23:5: ( 'ownedAttribute' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:23:7: 'ownedAttribute'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:23:5: ( 'variable' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:23:7: 'variable'
             {
-            match("ownedAttribute"); 
+            match("variable"); 
 
 
             }
@@ -320,10 +320,11 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT25() throws RecognitionException {
         try {
             int _type = T25;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:24:5: ( ';' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:24:7: ';'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:24:5: ( 'class' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:24:7: 'class'
             {
-            match(';'); 
+            match("class"); 
+
 
             }
 
@@ -338,10 +339,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT26() throws RecognitionException {
         try {
             int _type = T26;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:25:5: ( 'nestedClassifier' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:25:7: 'nestedClassifier'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:25:5: ( 'ownedAttribute' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:25:7: 'ownedAttribute'
             {
-            match("nestedClassifier"); 
+            match("ownedAttribute"); 
 
 
             }
@@ -357,10 +358,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT27() throws RecognitionException {
         try {
             int _type = T27;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:26:5: ( ',' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:26:7: ','
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:26:5: ( ';' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:26:7: ';'
             {
-            match(','); 
+            match(';'); 
 
             }
 
@@ -375,10 +376,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT28() throws RecognitionException {
         try {
             int _type = T28;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:27:5: ( 'ownedOperation' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:27:7: 'ownedOperation'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:27:5: ( 'nestedClassifier' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:27:7: 'nestedClassifier'
             {
-            match("ownedOperation"); 
+            match("nestedClassifier"); 
 
 
             }
@@ -394,11 +395,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT29() throws RecognitionException {
         try {
             int _type = T29;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:28:5: ( 'Integer' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:28:7: 'Integer'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:28:5: ( ',' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:28:7: ','
             {
-            match("Integer"); 
-
+            match(','); 
 
             }
 
@@ -413,10 +413,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT30() throws RecognitionException {
         try {
             int _type = T30;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:29:5: ( 'Boolean' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:29:7: 'Boolean'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:29:5: ( 'ownedOperation' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:29:7: 'ownedOperation'
             {
-            match("Boolean"); 
+            match("ownedOperation"); 
 
 
             }
@@ -432,10 +432,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT31() throws RecognitionException {
         try {
             int _type = T31;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:30:5: ( 'UnlimitedNatural' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:30:7: 'UnlimitedNatural'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:30:5: ( 'Integer' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:30:7: 'Integer'
             {
-            match("UnlimitedNatural"); 
+            match("Integer"); 
 
 
             }
@@ -451,10 +451,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT32() throws RecognitionException {
         try {
             int _type = T32;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:31:5: ( 'LiteralInteger' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:31:7: 'LiteralInteger'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:31:5: ( 'Boolean' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:31:7: 'Boolean'
             {
-            match("LiteralInteger"); 
+            match("Boolean"); 
 
 
             }
@@ -470,10 +470,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT33() throws RecognitionException {
         try {
             int _type = T33;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:32:5: ( 'name' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:32:7: 'name'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:32:5: ( 'UnlimitedNatural' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:32:7: 'UnlimitedNatural'
             {
-            match("name"); 
+            match("UnlimitedNatural"); 
 
 
             }
@@ -489,10 +489,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT34() throws RecognitionException {
         try {
             int _type = T34;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:33:5: ( 'value' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:33:7: 'value'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:33:5: ( 'LiteralInteger' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:33:7: 'LiteralInteger'
             {
-            match("value"); 
+            match("LiteralInteger"); 
 
 
             }
@@ -508,10 +508,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT35() throws RecognitionException {
         try {
             int _type = T35;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:34:5: ( 'LiteralString' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:34:7: 'LiteralString'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:34:5: ( 'name' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:34:7: 'name'
             {
-            match("LiteralString"); 
+            match("name"); 
 
 
             }
@@ -527,10 +527,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT36() throws RecognitionException {
         try {
             int _type = T36;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:35:5: ( 'LiteralBoolean' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:35:7: 'LiteralBoolean'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:35:5: ( 'value' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:35:7: 'value'
             {
-            match("LiteralBoolean"); 
+            match("value"); 
 
 
             }
@@ -546,10 +546,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT37() throws RecognitionException {
         try {
             int _type = T37;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:36:5: ( 'LiteralUnlimitedNatural' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:36:7: 'LiteralUnlimitedNatural'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:36:5: ( 'LiteralString' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:36:7: 'LiteralString'
             {
-            match("LiteralUnlimitedNatural"); 
+            match("LiteralString"); 
 
 
             }
@@ -565,10 +565,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mT38() throws RecognitionException {
         try {
             int _type = T38;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:37:5: ( 'LiteralNull' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:37:7: 'LiteralNull'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:37:5: ( 'LiteralBoolean' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:37:7: 'LiteralBoolean'
             {
-            match("LiteralNull"); 
+            match("LiteralBoolean"); 
 
 
             }
@@ -580,14 +580,52 @@ public class InternalEAlfLexer extends Lexer {
     }
     // $ANTLR end T38
 
+    // $ANTLR start T39
+    public final void mT39() throws RecognitionException {
+        try {
+            int _type = T39;
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:38:5: ( 'LiteralUnlimitedNatural' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:38:7: 'LiteralUnlimitedNatural'
+            {
+            match("LiteralUnlimitedNatural"); 
+
+
+            }
+
+            this.type = _type;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end T39
+
+    // $ANTLR start T40
+    public final void mT40() throws RecognitionException {
+        try {
+            int _type = T40;
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:39:5: ( 'LiteralNull' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:39:7: 'LiteralNull'
+            {
+            match("LiteralNull"); 
+
+
+            }
+
+            this.type = _type;
+        }
+        finally {
+        }
+    }
+    // $ANTLR end T40
+
     // $ANTLR start RULE_ID
     public final void mRULE_ID() throws RecognitionException {
         try {
             int _type = RULE_ID;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1642:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1642:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1753:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1753:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1642:11: ( '^' )?
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1753:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -596,7 +634,7 @@ public class InternalEAlfLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1642:11: '^'
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1753:11: '^'
                     {
                     match('^'); 
 
@@ -615,7 +653,7 @@ public class InternalEAlfLexer extends Lexer {
                 recover(mse);    throw mse;
             }
 
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1642:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1753:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -663,10 +701,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_INT() throws RecognitionException {
         try {
             int _type = RULE_INT;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1644:10: ( ( '0' .. '9' )+ )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1644:12: ( '0' .. '9' )+
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1755:10: ( ( '0' .. '9' )+ )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1755:12: ( '0' .. '9' )+
             {
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1644:12: ( '0' .. '9' )+
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1755:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -680,7 +718,7 @@ public class InternalEAlfLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1644:13: '0' .. '9'
+            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1755:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -710,10 +748,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_STRING() throws RecognitionException {
         try {
             int _type = RULE_STRING;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -725,16 +763,16 @@ public class InternalEAlfLexer extends Lexer {
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("1646:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )", 6, 0, input);
+                    new NoViableAltException("1757:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )", 6, 0, input);
 
                 throw nvae;
             }
             switch (alt6) {
                 case 1 :
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -750,7 +788,7 @@ public class InternalEAlfLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -767,7 +805,7 @@ public class InternalEAlfLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:62: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:62: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
                     	        input.consume();
@@ -793,10 +831,10 @@ public class InternalEAlfLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:82: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:82: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:87: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:87: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -812,7 +850,7 @@ public class InternalEAlfLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:88: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
+                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:88: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||input.LA(1)=='t' ) {
@@ -829,7 +867,7 @@ public class InternalEAlfLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1646:129: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1757:129: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFE') ) {
                     	        input.consume();
@@ -871,12 +909,12 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_ML_COMMENT() throws RecognitionException {
         try {
             int _type = RULE_ML_COMMENT;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1648:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1648:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1759:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1759:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1648:24: ( options {greedy=false; } : . )*
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1759:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -901,7 +939,7 @@ public class InternalEAlfLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1648:52: .
+            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1759:52: .
             	    {
             	    matchAny(); 
 
@@ -929,12 +967,12 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_SL_COMMENT() throws RecognitionException {
         try {
             int _type = RULE_SL_COMMENT;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -947,7 +985,7 @@ public class InternalEAlfLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFE') ) {
             	        input.consume();
@@ -968,7 +1006,7 @@ public class InternalEAlfLexer extends Lexer {
                 }
             } while (true);
 
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:40: ( ( '\\r' )? '\\n' )?
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -977,9 +1015,9 @@ public class InternalEAlfLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:41: ( '\\r' )? '\\n'
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:41: ( '\\r' )? '\\n'
                     {
-                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:41: ( '\\r' )?
+                    // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -988,7 +1026,7 @@ public class InternalEAlfLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1650:41: '\\r'
+                            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1761:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1018,10 +1056,10 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_WS() throws RecognitionException {
         try {
             int _type = RULE_WS;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1652:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1652:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1763:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1763:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1652:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1763:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -1074,8 +1112,8 @@ public class InternalEAlfLexer extends Lexer {
     public final void mRULE_ANY_OTHER() throws RecognitionException {
         try {
             int _type = RULE_ANY_OTHER;
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1654:16: ( . )
-            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1654:18: .
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1765:16: ( . )
+            // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1765:18: .
             {
             matchAny(); 
 
@@ -1089,8 +1127,8 @@ public class InternalEAlfLexer extends Lexer {
     // $ANTLR end RULE_ANY_OTHER
 
     public void mTokens() throws RecognitionException {
-        // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:8: ( T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
-        int alt12=35;
+        // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:8: ( T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER )
+        int alt12=37;
         int LA12_0 = input.LA(1);
 
         if ( (LA12_0=='{') ) {
@@ -1120,62 +1158,68 @@ public class InternalEAlfLexer extends Lexer {
         else if ( (LA12_0=='a') ) {
             alt12 = mTokensHelper009();
         }
-        else if ( (LA12_0=='f') ) {
+        else if ( (LA12_0=='[') ) {
             alt12 = mTokensHelper010();
         }
-        else if ( (LA12_0=='c') ) {
+        else if ( (LA12_0=='s') ) {
             alt12 = mTokensHelper011();
         }
-        else if ( (LA12_0==';') ) {
+        else if ( (LA12_0==']') ) {
             alt12 = mTokensHelper012();
         }
-        else if ( (LA12_0=='n') ) {
+        else if ( (LA12_0=='v') ) {
             alt12 = mTokensHelper013();
         }
-        else if ( (LA12_0==',') ) {
+        else if ( (LA12_0=='c') ) {
             alt12 = mTokensHelper014();
         }
-        else if ( (LA12_0=='I') ) {
+        else if ( (LA12_0==';') ) {
             alt12 = mTokensHelper015();
         }
-        else if ( (LA12_0=='B') ) {
+        else if ( (LA12_0=='n') ) {
             alt12 = mTokensHelper016();
         }
-        else if ( (LA12_0=='U') ) {
+        else if ( (LA12_0==',') ) {
             alt12 = mTokensHelper017();
         }
-        else if ( (LA12_0=='L') ) {
+        else if ( (LA12_0=='I') ) {
             alt12 = mTokensHelper018();
         }
-        else if ( (LA12_0=='v') ) {
+        else if ( (LA12_0=='B') ) {
             alt12 = mTokensHelper019();
         }
-        else if ( (LA12_0=='^') ) {
+        else if ( (LA12_0=='U') ) {
             alt12 = mTokensHelper020();
         }
-        else if ( (LA12_0=='A'||(LA12_0>='C' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='K')||(LA12_0>='M' && LA12_0<='T')||(LA12_0>='V' && LA12_0<='Z')||LA12_0=='_'||LA12_0=='b'||(LA12_0>='d' && LA12_0<='e')||(LA12_0>='g' && LA12_0<='m')||(LA12_0>='q' && LA12_0<='u')||(LA12_0>='w' && LA12_0<='z')) ) {
+        else if ( (LA12_0=='L') ) {
             alt12 = mTokensHelper021();
         }
-        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {
+        else if ( (LA12_0=='^') ) {
             alt12 = mTokensHelper022();
         }
-        else if ( (LA12_0=='\"') ) {
+        else if ( (LA12_0=='A'||(LA12_0>='C' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='K')||(LA12_0>='M' && LA12_0<='T')||(LA12_0>='V' && LA12_0<='Z')||LA12_0=='_'||LA12_0=='b'||(LA12_0>='d' && LA12_0<='m')||(LA12_0>='q' && LA12_0<='r')||(LA12_0>='t' && LA12_0<='u')||(LA12_0>='w' && LA12_0<='z')) ) {
             alt12 = mTokensHelper023();
         }
-        else if ( (LA12_0=='\'') ) {
+        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {
             alt12 = mTokensHelper024();
         }
-        else if ( (LA12_0=='/') ) {
+        else if ( (LA12_0=='\"') ) {
             alt12 = mTokensHelper025();
         }
-        else if ( (LA12_0=='\n'||LA12_0=='\r'||LA12_0==' ') ) {
+        else if ( (LA12_0=='\'') ) {
             alt12 = mTokensHelper026();
         }
-        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='*' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||(LA12_0>='<' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFE')) ) {
+        else if ( (LA12_0=='/') ) {
             alt12 = mTokensHelper027();
         }
-        else {
+        else if ( (LA12_0=='\n'||LA12_0=='\r'||LA12_0==' ') ) {
             alt12 = mTokensHelper028();
+        }
+        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='*' && LA12_0<='+')||(LA12_0>='-' && LA12_0<='.')||(LA12_0>='<' && LA12_0<='@')||LA12_0=='\\'||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFE')) ) {
+            alt12 = mTokensHelper029();
+        }
+        else {
+            alt12 = mTokensHelper030();
         }
         switch (alt12) {
             case 1 :
@@ -1375,49 +1419,63 @@ public class InternalEAlfLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:122: RULE_ID
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:122: T39
+                {
+                mT39(); 
+
+                }
+                break;
+            case 30 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:126: T40
+                {
+                mT40(); 
+
+                }
+                break;
+            case 31 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:130: RULE_ID
                 {
                 mRULE_ID(); 
 
                 }
                 break;
-            case 30 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:130: RULE_INT
+            case 32 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:138: RULE_INT
                 {
                 mRULE_INT(); 
 
                 }
                 break;
-            case 31 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:139: RULE_STRING
+            case 33 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:147: RULE_STRING
                 {
                 mRULE_STRING(); 
 
                 }
                 break;
-            case 32 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:151: RULE_ML_COMMENT
+            case 34 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:159: RULE_ML_COMMENT
                 {
                 mRULE_ML_COMMENT(); 
 
                 }
                 break;
-            case 33 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:167: RULE_SL_COMMENT
+            case 35 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:175: RULE_SL_COMMENT
                 {
                 mRULE_SL_COMMENT(); 
 
                 }
                 break;
-            case 34 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:183: RULE_WS
+            case 36 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:191: RULE_WS
                 {
                 mRULE_WS(); 
 
                 }
                 break;
-            case 35 :
-                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:191: RULE_ANY_OTHER
+            case 37 :
+                // ../ro.ubbcluj.cs.ealf/src-gen/ro/ubbcluj/cs/ealf/parser/antlr/internal/InternalEAlf.g:1:199: RULE_ANY_OTHER
                 {
                 mRULE_ANY_OTHER(); 
 
@@ -1438,7 +1496,7 @@ public class InternalEAlfLexer extends Lexer {
             return 2;
         }
         else {
-            return 34;}
+            return 36;}
     }
 
     private int mTokensHelper003() throws RecognitionException {
@@ -1449,92 +1507,92 @@ public class InternalEAlfLexer extends Lexer {
         switch ( input.LA(2) ) {
         case 'a':
             {
-            int LA12_32 = input.LA(3);
+            int LA12_34 = input.LA(3);
 
-            if ( (LA12_32=='c') ) {
-                int LA12_56 = input.LA(4);
+            if ( (LA12_34=='c') ) {
+                int LA12_60 = input.LA(4);
 
-                if ( (LA12_56=='k') ) {
-                    int LA12_70 = input.LA(5);
+                if ( (LA12_60=='k') ) {
+                    int LA12_75 = input.LA(5);
 
-                    if ( (LA12_70=='a') ) {
-                        int LA12_84 = input.LA(6);
+                    if ( (LA12_75=='a') ) {
+                        int LA12_90 = input.LA(6);
 
-                        if ( (LA12_84=='g') ) {
-                            int LA12_98 = input.LA(7);
+                        if ( (LA12_90=='g') ) {
+                            int LA12_105 = input.LA(7);
 
-                            if ( (LA12_98=='e') ) {
-                                int LA12_112 = input.LA(8);
+                            if ( (LA12_105=='e') ) {
+                                int LA12_120 = input.LA(8);
 
-                                if ( ((LA12_112>='0' && LA12_112<='9')||(LA12_112>='A' && LA12_112<='Z')||LA12_112=='_'||(LA12_112>='a' && LA12_112<='z')) ) {
-                                    return 29;
+                                if ( ((LA12_120>='0' && LA12_120<='9')||(LA12_120>='A' && LA12_120<='Z')||LA12_120=='_'||(LA12_120>='a' && LA12_120<='z')) ) {
+                                    return 31;
                                 }
                                 else {
                                     return 4;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
             }
         case 'r':
             {
-            int LA12_33 = input.LA(3);
+            int LA12_35 = input.LA(3);
 
-            if ( (LA12_33=='o') ) {
-                int LA12_57 = input.LA(4);
+            if ( (LA12_35=='o') ) {
+                int LA12_61 = input.LA(4);
 
-                if ( (LA12_57=='p') ) {
-                    int LA12_71 = input.LA(5);
+                if ( (LA12_61=='p') ) {
+                    int LA12_76 = input.LA(5);
 
-                    if ( (LA12_71=='e') ) {
-                        int LA12_85 = input.LA(6);
+                    if ( (LA12_76=='e') ) {
+                        int LA12_91 = input.LA(6);
 
-                        if ( (LA12_85=='r') ) {
-                            int LA12_99 = input.LA(7);
+                        if ( (LA12_91=='r') ) {
+                            int LA12_106 = input.LA(7);
 
-                            if ( (LA12_99=='t') ) {
-                                int LA12_113 = input.LA(8);
+                            if ( (LA12_106=='t') ) {
+                                int LA12_121 = input.LA(8);
 
-                                if ( (LA12_113=='y') ) {
-                                    int LA12_125 = input.LA(9);
+                                if ( (LA12_121=='y') ) {
+                                    int LA12_134 = input.LA(9);
 
-                                    if ( ((LA12_125>='0' && LA12_125<='9')||(LA12_125>='A' && LA12_125<='Z')||LA12_125=='_'||(LA12_125>='a' && LA12_125<='z')) ) {
-                                        return 29;
+                                    if ( ((LA12_134>='0' && LA12_134<='9')||(LA12_134>='A' && LA12_134<='Z')||LA12_134=='_'||(LA12_134>='a' && LA12_134<='z')) ) {
+                                        return 31;
                                     }
                                     else {
                                         return 5;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
             }
         default:
-            return 29;}
+            return 31;}
 
     }
 
@@ -1546,199 +1604,199 @@ public class InternalEAlfLexer extends Lexer {
         switch ( input.LA(2) ) {
         case 'p':
             {
-            int LA12_36 = input.LA(3);
+            int LA12_38 = input.LA(3);
 
-            if ( (LA12_36=='e') ) {
-                int LA12_58 = input.LA(4);
+            if ( (LA12_38=='e') ) {
+                int LA12_62 = input.LA(4);
 
-                if ( (LA12_58=='r') ) {
-                    int LA12_72 = input.LA(5);
+                if ( (LA12_62=='r') ) {
+                    int LA12_77 = input.LA(5);
 
-                    if ( (LA12_72=='a') ) {
-                        int LA12_86 = input.LA(6);
+                    if ( (LA12_77=='a') ) {
+                        int LA12_92 = input.LA(6);
 
-                        if ( (LA12_86=='t') ) {
-                            int LA12_100 = input.LA(7);
+                        if ( (LA12_92=='t') ) {
+                            int LA12_107 = input.LA(7);
 
-                            if ( (LA12_100=='i') ) {
-                                int LA12_114 = input.LA(8);
+                            if ( (LA12_107=='i') ) {
+                                int LA12_122 = input.LA(8);
 
-                                if ( (LA12_114=='o') ) {
-                                    int LA12_126 = input.LA(9);
+                                if ( (LA12_122=='o') ) {
+                                    int LA12_135 = input.LA(9);
 
-                                    if ( (LA12_126=='n') ) {
-                                        int LA12_140 = input.LA(10);
+                                    if ( (LA12_135=='n') ) {
+                                        int LA12_151 = input.LA(10);
 
-                                        if ( ((LA12_140>='0' && LA12_140<='9')||(LA12_140>='A' && LA12_140<='Z')||LA12_140=='_'||(LA12_140>='a' && LA12_140<='z')) ) {
-                                            return 29;
+                                        if ( ((LA12_151>='0' && LA12_151<='9')||(LA12_151>='A' && LA12_151<='Z')||LA12_151=='_'||(LA12_151>='a' && LA12_151<='z')) ) {
+                                            return 31;
                                         }
                                         else {
                                             return 7;}
                                     }
                                     else {
-                                        return 29;}
+                                        return 31;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
             }
         case 'w':
             {
-            int LA12_37 = input.LA(3);
+            int LA12_39 = input.LA(3);
 
-            if ( (LA12_37=='n') ) {
-                int LA12_59 = input.LA(4);
+            if ( (LA12_39=='n') ) {
+                int LA12_63 = input.LA(4);
 
-                if ( (LA12_59=='e') ) {
-                    int LA12_73 = input.LA(5);
+                if ( (LA12_63=='e') ) {
+                    int LA12_78 = input.LA(5);
 
-                    if ( (LA12_73=='d') ) {
+                    if ( (LA12_78=='d') ) {
                         switch ( input.LA(6) ) {
                         case 'A':
                             {
-                            int LA12_101 = input.LA(7);
+                            int LA12_108 = input.LA(7);
 
-                            if ( (LA12_101=='t') ) {
-                                int LA12_115 = input.LA(8);
+                            if ( (LA12_108=='t') ) {
+                                int LA12_123 = input.LA(8);
 
-                                if ( (LA12_115=='t') ) {
-                                    int LA12_127 = input.LA(9);
+                                if ( (LA12_123=='t') ) {
+                                    int LA12_136 = input.LA(9);
 
-                                    if ( (LA12_127=='r') ) {
-                                        int LA12_141 = input.LA(10);
+                                    if ( (LA12_136=='r') ) {
+                                        int LA12_152 = input.LA(10);
 
-                                        if ( (LA12_141=='i') ) {
-                                            int LA12_152 = input.LA(11);
+                                        if ( (LA12_152=='i') ) {
+                                            int LA12_165 = input.LA(11);
 
-                                            if ( (LA12_152=='b') ) {
-                                                int LA12_161 = input.LA(12);
+                                            if ( (LA12_165=='b') ) {
+                                                int LA12_175 = input.LA(12);
 
-                                                if ( (LA12_161=='u') ) {
-                                                    int LA12_170 = input.LA(13);
+                                                if ( (LA12_175=='u') ) {
+                                                    int LA12_185 = input.LA(13);
 
-                                                    if ( (LA12_170=='t') ) {
-                                                        int LA12_179 = input.LA(14);
+                                                    if ( (LA12_185=='t') ) {
+                                                        int LA12_195 = input.LA(14);
 
-                                                        if ( (LA12_179=='e') ) {
-                                                            int LA12_187 = input.LA(15);
+                                                        if ( (LA12_195=='e') ) {
+                                                            int LA12_204 = input.LA(15);
 
-                                                            if ( ((LA12_187>='0' && LA12_187<='9')||(LA12_187>='A' && LA12_187<='Z')||LA12_187=='_'||(LA12_187>='a' && LA12_187<='z')) ) {
-                                                                return 29;
+                                                            if ( ((LA12_204>='0' && LA12_204<='9')||(LA12_204>='A' && LA12_204<='Z')||LA12_204=='_'||(LA12_204>='a' && LA12_204<='z')) ) {
+                                                                return 31;
                                                             }
                                                             else {
-                                                                return 14;}
+                                                                return 16;}
                                                         }
                                                         else {
-                                                            return 29;}
+                                                            return 31;}
                                                     }
                                                     else {
-                                                        return 29;}
+                                                        return 31;}
                                                 }
                                                 else {
-                                                    return 29;}
+                                                    return 31;}
                                             }
                                             else {
-                                                return 29;}
+                                                return 31;}
                                         }
                                         else {
-                                            return 29;}
+                                            return 31;}
                                     }
                                     else {
-                                        return 29;}
+                                        return 31;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                             }
                         case 'O':
                             {
-                            int LA12_102 = input.LA(7);
+                            int LA12_109 = input.LA(7);
 
-                            if ( (LA12_102=='p') ) {
-                                int LA12_116 = input.LA(8);
+                            if ( (LA12_109=='p') ) {
+                                int LA12_124 = input.LA(8);
 
-                                if ( (LA12_116=='e') ) {
-                                    int LA12_128 = input.LA(9);
+                                if ( (LA12_124=='e') ) {
+                                    int LA12_137 = input.LA(9);
 
-                                    if ( (LA12_128=='r') ) {
-                                        int LA12_142 = input.LA(10);
+                                    if ( (LA12_137=='r') ) {
+                                        int LA12_153 = input.LA(10);
 
-                                        if ( (LA12_142=='a') ) {
-                                            int LA12_153 = input.LA(11);
+                                        if ( (LA12_153=='a') ) {
+                                            int LA12_166 = input.LA(11);
 
-                                            if ( (LA12_153=='t') ) {
-                                                int LA12_162 = input.LA(12);
+                                            if ( (LA12_166=='t') ) {
+                                                int LA12_176 = input.LA(12);
 
-                                                if ( (LA12_162=='i') ) {
-                                                    int LA12_171 = input.LA(13);
+                                                if ( (LA12_176=='i') ) {
+                                                    int LA12_186 = input.LA(13);
 
-                                                    if ( (LA12_171=='o') ) {
-                                                        int LA12_180 = input.LA(14);
+                                                    if ( (LA12_186=='o') ) {
+                                                        int LA12_196 = input.LA(14);
 
-                                                        if ( (LA12_180=='n') ) {
-                                                            int LA12_188 = input.LA(15);
+                                                        if ( (LA12_196=='n') ) {
+                                                            int LA12_205 = input.LA(15);
 
-                                                            if ( ((LA12_188>='0' && LA12_188<='9')||(LA12_188>='A' && LA12_188<='Z')||LA12_188=='_'||(LA12_188>='a' && LA12_188<='z')) ) {
-                                                                return 29;
+                                                            if ( ((LA12_205>='0' && LA12_205<='9')||(LA12_205>='A' && LA12_205<='Z')||LA12_205=='_'||(LA12_205>='a' && LA12_205<='z')) ) {
+                                                                return 31;
                                                             }
                                                             else {
-                                                                return 18;}
+                                                                return 20;}
                                                         }
                                                         else {
-                                                            return 29;}
+                                                            return 31;}
                                                     }
                                                     else {
-                                                        return 29;}
+                                                        return 31;}
                                                 }
                                                 else {
-                                                    return 29;}
+                                                    return 31;}
                                             }
                                             else {
-                                                return 29;}
+                                                return 31;}
                                         }
                                         else {
-                                            return 29;}
+                                            return 31;}
                                     }
                                     else {
-                                        return 29;}
+                                        return 31;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                             }
                         default:
-                            return 29;}
+                            return 31;}
 
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
             }
         default:
-            return 29;}
+            return 31;}
 
     }
 
@@ -1754,851 +1812,943 @@ public class InternalEAlfLexer extends Lexer {
         int LA12_9 = input.LA(2);
 
         if ( (LA12_9=='c') ) {
-            int LA12_40 = input.LA(3);
+            int LA12_42 = input.LA(3);
 
-            if ( (LA12_40=='t') ) {
-                int LA12_60 = input.LA(4);
+            if ( (LA12_42=='t') ) {
+                int LA12_64 = input.LA(4);
 
-                if ( (LA12_60=='i') ) {
-                    switch ( input.LA(5) ) {
-                    case 'v':
-                        {
-                        int LA12_88 = input.LA(6);
+                if ( (LA12_64=='i') ) {
+                    int LA12_79 = input.LA(5);
 
-                        if ( (LA12_88=='i') ) {
-                            int LA12_103 = input.LA(7);
+                    if ( (LA12_79=='v') ) {
+                        int LA12_94 = input.LA(6);
 
-                            if ( (LA12_103=='t') ) {
-                                int LA12_117 = input.LA(8);
+                        if ( (LA12_94=='i') ) {
+                            int LA12_110 = input.LA(7);
 
-                                if ( (LA12_117=='y') ) {
-                                    int LA12_129 = input.LA(9);
+                            if ( (LA12_110=='t') ) {
+                                int LA12_125 = input.LA(8);
 
-                                    if ( ((LA12_129>='0' && LA12_129<='9')||(LA12_129>='A' && LA12_129<='Z')||LA12_129=='_'||(LA12_129>='a' && LA12_129<='z')) ) {
-                                        return 29;
+                                if ( (LA12_125=='y') ) {
+                                    int LA12_138 = input.LA(9);
+
+                                    if ( ((LA12_138>='0' && LA12_138<='9')||(LA12_138>='A' && LA12_138<='Z')||LA12_138=='_'||(LA12_138>='a' && LA12_138<='z')) ) {
+                                        return 31;
                                     }
                                     else {
                                         return 10;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
-                        }
-                    case 'o':
-                        {
-                        int LA12_89 = input.LA(6);
-
-                        if ( (LA12_89=='n') ) {
-                            int LA12_104 = input.LA(7);
-
-                            if ( ((LA12_104>='0' && LA12_104<='9')||(LA12_104>='A' && LA12_104<='Z')||LA12_104=='_'||(LA12_104>='a' && LA12_104<='z')) ) {
-                                return 29;
-                            }
-                            else {
-                                return 12;}
-                        }
-                        else {
-                            return 29;}
-                        }
-                    default:
-                        return 29;}
-
+                            return 31;}
+                    }
+                    else {
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
         }
         else {
-            return 29;}
+            return 31;}
     }
 
     private int mTokensHelper010() throws RecognitionException {
-        int LA12_10 = input.LA(2);
-
-        if ( (LA12_10=='o') ) {
-            int LA12_41 = input.LA(3);
-
-            if ( (LA12_41=='r') ) {
-                int LA12_61 = input.LA(4);
-
-                if ( ((LA12_61>='0' && LA12_61<='9')||(LA12_61>='A' && LA12_61<='Z')||LA12_61=='_'||(LA12_61>='a' && LA12_61<='z')) ) {
-                    return 29;
-                }
-                else {
-                    return 11;}
-            }
-            else {
-                return 29;}
-        }
-        else {
-            return 29;}
+        return 11;
     }
 
     private int mTokensHelper011() throws RecognitionException {
         int LA12_11 = input.LA(2);
 
-        if ( (LA12_11=='l') ) {
-            int LA12_42 = input.LA(3);
+        if ( (LA12_11=='p') ) {
+            int LA12_44 = input.LA(3);
 
-            if ( (LA12_42=='a') ) {
-                int LA12_62 = input.LA(4);
+            if ( (LA12_44=='e') ) {
+                int LA12_65 = input.LA(4);
 
-                if ( (LA12_62=='s') ) {
-                    int LA12_76 = input.LA(5);
+                if ( (LA12_65=='c') ) {
+                    int LA12_80 = input.LA(5);
 
-                    if ( (LA12_76=='s') ) {
-                        int LA12_90 = input.LA(6);
+                    if ( (LA12_80=='i') ) {
+                        int LA12_95 = input.LA(6);
 
-                        if ( ((LA12_90>='0' && LA12_90<='9')||(LA12_90>='A' && LA12_90<='Z')||LA12_90=='_'||(LA12_90>='a' && LA12_90<='z')) ) {
-                            return 29;
+                        if ( (LA12_95=='f') ) {
+                            int LA12_111 = input.LA(7);
+
+                            if ( (LA12_111=='i') ) {
+                                int LA12_126 = input.LA(8);
+
+                                if ( (LA12_126=='c') ) {
+                                    int LA12_139 = input.LA(9);
+
+                                    if ( (LA12_139=='a') ) {
+                                        int LA12_155 = input.LA(10);
+
+                                        if ( (LA12_155=='t') ) {
+                                            int LA12_167 = input.LA(11);
+
+                                            if ( (LA12_167=='i') ) {
+                                                int LA12_177 = input.LA(12);
+
+                                                if ( (LA12_177=='o') ) {
+                                                    int LA12_187 = input.LA(13);
+
+                                                    if ( (LA12_187=='n') ) {
+                                                        int LA12_197 = input.LA(14);
+
+                                                        if ( (LA12_197==' ') ) {
+                                                            return 12;
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                }
+                                else {
+                                    return 31;}
+                            }
+                            else {
+                                return 31;}
                         }
                         else {
-                            return 13;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
         }
         else {
-            return 29;}
+            return 31;}
     }
 
     private int mTokensHelper012() throws RecognitionException {
-        return 15;
+        return 13;
     }
 
     private int mTokensHelper013() throws RecognitionException {
-        switch ( input.LA(2) ) {
-        case 'a':
-            {
-            int LA12_44 = input.LA(3);
+        int LA12_13 = input.LA(2);
 
-            if ( (LA12_44=='m') ) {
-                int LA12_63 = input.LA(4);
+        if ( (LA12_13=='a') ) {
+            switch ( input.LA(3) ) {
+            case 'r':
+                {
+                int LA12_66 = input.LA(4);
 
-                if ( (LA12_63=='e') ) {
-                    int LA12_77 = input.LA(5);
+                if ( (LA12_66=='i') ) {
+                    int LA12_81 = input.LA(5);
 
-                    if ( ((LA12_77>='0' && LA12_77<='9')||(LA12_77>='A' && LA12_77<='Z')||LA12_77=='_'||(LA12_77>='a' && LA12_77<='z')) ) {
-                        return 29;
-                    }
-                    else {
-                        return 23;}
-                }
-                else {
-                    return 29;}
-            }
-            else {
-                return 29;}
-            }
-        case 'e':
-            {
-            int LA12_45 = input.LA(3);
+                    if ( (LA12_81=='a') ) {
+                        int LA12_96 = input.LA(6);
 
-            if ( (LA12_45=='s') ) {
-                int LA12_64 = input.LA(4);
+                        if ( (LA12_96=='b') ) {
+                            int LA12_112 = input.LA(7);
 
-                if ( (LA12_64=='t') ) {
-                    int LA12_78 = input.LA(5);
+                            if ( (LA12_112=='l') ) {
+                                int LA12_127 = input.LA(8);
 
-                    if ( (LA12_78=='e') ) {
-                        int LA12_92 = input.LA(6);
+                                if ( (LA12_127=='e') ) {
+                                    int LA12_140 = input.LA(9);
 
-                        if ( (LA12_92=='d') ) {
-                            int LA12_106 = input.LA(7);
-
-                            if ( (LA12_106=='C') ) {
-                                int LA12_119 = input.LA(8);
-
-                                if ( (LA12_119=='l') ) {
-                                    int LA12_130 = input.LA(9);
-
-                                    if ( (LA12_130=='a') ) {
-                                        int LA12_144 = input.LA(10);
-
-                                        if ( (LA12_144=='s') ) {
-                                            int LA12_154 = input.LA(11);
-
-                                            if ( (LA12_154=='s') ) {
-                                                int LA12_163 = input.LA(12);
-
-                                                if ( (LA12_163=='i') ) {
-                                                    int LA12_172 = input.LA(13);
-
-                                                    if ( (LA12_172=='f') ) {
-                                                        int LA12_181 = input.LA(14);
-
-                                                        if ( (LA12_181=='i') ) {
-                                                            int LA12_189 = input.LA(15);
-
-                                                            if ( (LA12_189=='e') ) {
-                                                                int LA12_197 = input.LA(16);
-
-                                                                if ( (LA12_197=='r') ) {
-                                                                    int LA12_202 = input.LA(17);
-
-                                                                    if ( ((LA12_202>='0' && LA12_202<='9')||(LA12_202>='A' && LA12_202<='Z')||LA12_202=='_'||(LA12_202>='a' && LA12_202<='z')) ) {
-                                                                        return 29;
-                                                                    }
-                                                                    else {
-                                                                        return 16;}
-                                                                }
-                                                                else {
-                                                                    return 29;}
-                                                            }
-                                                            else {
-                                                                return 29;}
-                                                        }
-                                                        else {
-                                                            return 29;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
+                                    if ( ((LA12_140>='0' && LA12_140<='9')||(LA12_140>='A' && LA12_140<='Z')||LA12_140=='_'||(LA12_140>='a' && LA12_140<='z')) ) {
+                                        return 31;
                                     }
                                     else {
-                                        return 29;}
+                                        return 14;}
                                 }
                                 else {
-                                    return 29;}
+                                    return 31;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
-            }
-            else {
-                return 29;}
-            }
-        default:
-            return 29;}
+                    return 31;}
+                }
+            case 'l':
+                {
+                int LA12_67 = input.LA(4);
 
+                if ( (LA12_67=='u') ) {
+                    int LA12_82 = input.LA(5);
+
+                    if ( (LA12_82=='e') ) {
+                        int LA12_97 = input.LA(6);
+
+                        if ( ((LA12_97>='0' && LA12_97<='9')||(LA12_97>='A' && LA12_97<='Z')||LA12_97=='_'||(LA12_97>='a' && LA12_97<='z')) ) {
+                            return 31;
+                        }
+                        else {
+                            return 26;}
+                    }
+                    else {
+                        return 31;}
+                }
+                else {
+                    return 31;}
+                }
+            default:
+                return 31;}
+
+        }
+        else {
+            return 31;}
     }
 
     private int mTokensHelper014() throws RecognitionException {
-        return 17;
+        int LA12_14 = input.LA(2);
+
+        if ( (LA12_14=='l') ) {
+            int LA12_47 = input.LA(3);
+
+            if ( (LA12_47=='a') ) {
+                int LA12_68 = input.LA(4);
+
+                if ( (LA12_68=='s') ) {
+                    int LA12_83 = input.LA(5);
+
+                    if ( (LA12_83=='s') ) {
+                        int LA12_98 = input.LA(6);
+
+                        if ( ((LA12_98>='0' && LA12_98<='9')||(LA12_98>='A' && LA12_98<='Z')||LA12_98=='_'||(LA12_98>='a' && LA12_98<='z')) ) {
+                            return 31;
+                        }
+                        else {
+                            return 15;}
+                    }
+                    else {
+                        return 31;}
+                }
+                else {
+                    return 31;}
+            }
+            else {
+                return 31;}
+        }
+        else {
+            return 31;}
     }
 
     private int mTokensHelper015() throws RecognitionException {
-        int LA12_15 = input.LA(2);
-
-        if ( (LA12_15=='n') ) {
-            int LA12_47 = input.LA(3);
-
-            if ( (LA12_47=='t') ) {
-                int LA12_65 = input.LA(4);
-
-                if ( (LA12_65=='e') ) {
-                    int LA12_79 = input.LA(5);
-
-                    if ( (LA12_79=='g') ) {
-                        int LA12_93 = input.LA(6);
-
-                        if ( (LA12_93=='e') ) {
-                            int LA12_107 = input.LA(7);
-
-                            if ( (LA12_107=='r') ) {
-                                int LA12_120 = input.LA(8);
-
-                                if ( ((LA12_120>='0' && LA12_120<='9')||(LA12_120>='A' && LA12_120<='Z')||LA12_120=='_'||(LA12_120>='a' && LA12_120<='z')) ) {
-                                    return 29;
-                                }
-                                else {
-                                    return 19;}
-                            }
-                            else {
-                                return 29;}
-                        }
-                        else {
-                            return 29;}
-                    }
-                    else {
-                        return 29;}
-                }
-                else {
-                    return 29;}
-            }
-            else {
-                return 29;}
-        }
-        else {
-            return 29;}
+        return 17;
     }
 
     private int mTokensHelper016() throws RecognitionException {
-        int LA12_16 = input.LA(2);
+        switch ( input.LA(2) ) {
+        case 'a':
+            {
+            int LA12_49 = input.LA(3);
 
-        if ( (LA12_16=='o') ) {
-            int LA12_48 = input.LA(3);
+            if ( (LA12_49=='m') ) {
+                int LA12_69 = input.LA(4);
 
-            if ( (LA12_48=='o') ) {
-                int LA12_66 = input.LA(4);
+                if ( (LA12_69=='e') ) {
+                    int LA12_84 = input.LA(5);
 
-                if ( (LA12_66=='l') ) {
-                    int LA12_80 = input.LA(5);
-
-                    if ( (LA12_80=='e') ) {
-                        int LA12_94 = input.LA(6);
-
-                        if ( (LA12_94=='a') ) {
-                            int LA12_108 = input.LA(7);
-
-                            if ( (LA12_108=='n') ) {
-                                int LA12_121 = input.LA(8);
-
-                                if ( ((LA12_121>='0' && LA12_121<='9')||(LA12_121>='A' && LA12_121<='Z')||LA12_121=='_'||(LA12_121>='a' && LA12_121<='z')) ) {
-                                    return 29;
-                                }
-                                else {
-                                    return 20;}
-                            }
-                            else {
-                                return 29;}
-                        }
-                        else {
-                            return 29;}
+                    if ( ((LA12_84>='0' && LA12_84<='9')||(LA12_84>='A' && LA12_84<='Z')||LA12_84=='_'||(LA12_84>='a' && LA12_84<='z')) ) {
+                        return 31;
                     }
                     else {
-                        return 29;}
+                        return 25;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
-        }
-        else {
-            return 29;}
+                return 31;}
+            }
+        case 'e':
+            {
+            int LA12_50 = input.LA(3);
+
+            if ( (LA12_50=='s') ) {
+                int LA12_70 = input.LA(4);
+
+                if ( (LA12_70=='t') ) {
+                    int LA12_85 = input.LA(5);
+
+                    if ( (LA12_85=='e') ) {
+                        int LA12_100 = input.LA(6);
+
+                        if ( (LA12_100=='d') ) {
+                            int LA12_115 = input.LA(7);
+
+                            if ( (LA12_115=='C') ) {
+                                int LA12_128 = input.LA(8);
+
+                                if ( (LA12_128=='l') ) {
+                                    int LA12_141 = input.LA(9);
+
+                                    if ( (LA12_141=='a') ) {
+                                        int LA12_157 = input.LA(10);
+
+                                        if ( (LA12_157=='s') ) {
+                                            int LA12_168 = input.LA(11);
+
+                                            if ( (LA12_168=='s') ) {
+                                                int LA12_178 = input.LA(12);
+
+                                                if ( (LA12_178=='i') ) {
+                                                    int LA12_188 = input.LA(13);
+
+                                                    if ( (LA12_188=='f') ) {
+                                                        int LA12_198 = input.LA(14);
+
+                                                        if ( (LA12_198=='i') ) {
+                                                            int LA12_207 = input.LA(15);
+
+                                                            if ( (LA12_207=='e') ) {
+                                                                int LA12_215 = input.LA(16);
+
+                                                                if ( (LA12_215=='r') ) {
+                                                                    int LA12_220 = input.LA(17);
+
+                                                                    if ( ((LA12_220>='0' && LA12_220<='9')||(LA12_220>='A' && LA12_220<='Z')||LA12_220=='_'||(LA12_220>='a' && LA12_220<='z')) ) {
+                                                                        return 31;
+                                                                    }
+                                                                    else {
+                                                                        return 18;}
+                                                                }
+                                                                else {
+                                                                    return 31;}
+                                                            }
+                                                            else {
+                                                                return 31;}
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                }
+                                else {
+                                    return 31;}
+                            }
+                            else {
+                                return 31;}
+                        }
+                        else {
+                            return 31;}
+                    }
+                    else {
+                        return 31;}
+                }
+                else {
+                    return 31;}
+            }
+            else {
+                return 31;}
+            }
+        default:
+            return 31;}
+
     }
 
     private int mTokensHelper017() throws RecognitionException {
-        int LA12_17 = input.LA(2);
-
-        if ( (LA12_17=='n') ) {
-            int LA12_49 = input.LA(3);
-
-            if ( (LA12_49=='l') ) {
-                int LA12_67 = input.LA(4);
-
-                if ( (LA12_67=='i') ) {
-                    int LA12_81 = input.LA(5);
-
-                    if ( (LA12_81=='m') ) {
-                        int LA12_95 = input.LA(6);
-
-                        if ( (LA12_95=='i') ) {
-                            int LA12_109 = input.LA(7);
-
-                            if ( (LA12_109=='t') ) {
-                                int LA12_122 = input.LA(8);
-
-                                if ( (LA12_122=='e') ) {
-                                    int LA12_133 = input.LA(9);
-
-                                    if ( (LA12_133=='d') ) {
-                                        int LA12_145 = input.LA(10);
-
-                                        if ( (LA12_145=='N') ) {
-                                            int LA12_155 = input.LA(11);
-
-                                            if ( (LA12_155=='a') ) {
-                                                int LA12_164 = input.LA(12);
-
-                                                if ( (LA12_164=='t') ) {
-                                                    int LA12_173 = input.LA(13);
-
-                                                    if ( (LA12_173=='u') ) {
-                                                        int LA12_182 = input.LA(14);
-
-                                                        if ( (LA12_182=='r') ) {
-                                                            int LA12_190 = input.LA(15);
-
-                                                            if ( (LA12_190=='a') ) {
-                                                                int LA12_198 = input.LA(16);
-
-                                                                if ( (LA12_198=='l') ) {
-                                                                    int LA12_203 = input.LA(17);
-
-                                                                    if ( ((LA12_203>='0' && LA12_203<='9')||(LA12_203>='A' && LA12_203<='Z')||LA12_203=='_'||(LA12_203>='a' && LA12_203<='z')) ) {
-                                                                        return 29;
-                                                                    }
-                                                                    else {
-                                                                        return 21;}
-                                                                }
-                                                                else {
-                                                                    return 29;}
-                                                            }
-                                                            else {
-                                                                return 29;}
-                                                        }
-                                                        else {
-                                                            return 29;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                }
-                                else {
-                                    return 29;}
-                            }
-                            else {
-                                return 29;}
-                        }
-                        else {
-                            return 29;}
-                    }
-                    else {
-                        return 29;}
-                }
-                else {
-                    return 29;}
-            }
-            else {
-                return 29;}
-        }
-        else {
-            return 29;}
+        return 19;
     }
 
     private int mTokensHelper018() throws RecognitionException {
         int LA12_18 = input.LA(2);
 
-        if ( (LA12_18=='i') ) {
-            int LA12_50 = input.LA(3);
+        if ( (LA12_18=='n') ) {
+            int LA12_52 = input.LA(3);
 
-            if ( (LA12_50=='t') ) {
-                int LA12_68 = input.LA(4);
+            if ( (LA12_52=='t') ) {
+                int LA12_71 = input.LA(4);
 
-                if ( (LA12_68=='e') ) {
-                    int LA12_82 = input.LA(5);
+                if ( (LA12_71=='e') ) {
+                    int LA12_86 = input.LA(5);
 
-                    if ( (LA12_82=='r') ) {
-                        int LA12_96 = input.LA(6);
+                    if ( (LA12_86=='g') ) {
+                        int LA12_101 = input.LA(6);
 
-                        if ( (LA12_96=='a') ) {
-                            int LA12_110 = input.LA(7);
+                        if ( (LA12_101=='e') ) {
+                            int LA12_116 = input.LA(7);
 
-                            if ( (LA12_110=='l') ) {
-                                switch ( input.LA(8) ) {
-                                case 'B':
-                                    {
-                                    int LA12_134 = input.LA(9);
+                            if ( (LA12_116=='r') ) {
+                                int LA12_129 = input.LA(8);
 
-                                    if ( (LA12_134=='o') ) {
-                                        int LA12_146 = input.LA(10);
-
-                                        if ( (LA12_146=='o') ) {
-                                            int LA12_156 = input.LA(11);
-
-                                            if ( (LA12_156=='l') ) {
-                                                int LA12_165 = input.LA(12);
-
-                                                if ( (LA12_165=='e') ) {
-                                                    int LA12_174 = input.LA(13);
-
-                                                    if ( (LA12_174=='a') ) {
-                                                        int LA12_183 = input.LA(14);
-
-                                                        if ( (LA12_183=='n') ) {
-                                                            int LA12_191 = input.LA(15);
-
-                                                            if ( ((LA12_191>='0' && LA12_191<='9')||(LA12_191>='A' && LA12_191<='Z')||LA12_191=='_'||(LA12_191>='a' && LA12_191<='z')) ) {
-                                                                return 29;
-                                                            }
-                                                            else {
-                                                                return 26;}
-                                                        }
-                                                        else {
-                                                            return 29;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                    }
-                                case 'I':
-                                    {
-                                    int LA12_135 = input.LA(9);
-
-                                    if ( (LA12_135=='n') ) {
-                                        int LA12_147 = input.LA(10);
-
-                                        if ( (LA12_147=='t') ) {
-                                            int LA12_157 = input.LA(11);
-
-                                            if ( (LA12_157=='e') ) {
-                                                int LA12_166 = input.LA(12);
-
-                                                if ( (LA12_166=='g') ) {
-                                                    int LA12_175 = input.LA(13);
-
-                                                    if ( (LA12_175=='e') ) {
-                                                        int LA12_184 = input.LA(14);
-
-                                                        if ( (LA12_184=='r') ) {
-                                                            int LA12_192 = input.LA(15);
-
-                                                            if ( ((LA12_192>='0' && LA12_192<='9')||(LA12_192>='A' && LA12_192<='Z')||LA12_192=='_'||(LA12_192>='a' && LA12_192<='z')) ) {
-                                                                return 29;
-                                                            }
-                                                            else {
-                                                                return 22;}
-                                                        }
-                                                        else {
-                                                            return 29;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                    }
-                                case 'N':
-                                    {
-                                    int LA12_136 = input.LA(9);
-
-                                    if ( (LA12_136=='u') ) {
-                                        int LA12_148 = input.LA(10);
-
-                                        if ( (LA12_148=='l') ) {
-                                            int LA12_158 = input.LA(11);
-
-                                            if ( (LA12_158=='l') ) {
-                                                int LA12_167 = input.LA(12);
-
-                                                if ( ((LA12_167>='0' && LA12_167<='9')||(LA12_167>='A' && LA12_167<='Z')||LA12_167=='_'||(LA12_167>='a' && LA12_167<='z')) ) {
-                                                    return 29;
-                                                }
-                                                else {
-                                                    return 28;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                    }
-                                case 'U':
-                                    {
-                                    int LA12_137 = input.LA(9);
-
-                                    if ( (LA12_137=='n') ) {
-                                        int LA12_149 = input.LA(10);
-
-                                        if ( (LA12_149=='l') ) {
-                                            int LA12_159 = input.LA(11);
-
-                                            if ( (LA12_159=='i') ) {
-                                                int LA12_168 = input.LA(12);
-
-                                                if ( (LA12_168=='m') ) {
-                                                    int LA12_177 = input.LA(13);
-
-                                                    if ( (LA12_177=='i') ) {
-                                                        int LA12_185 = input.LA(14);
-
-                                                        if ( (LA12_185=='t') ) {
-                                                            int LA12_193 = input.LA(15);
-
-                                                            if ( (LA12_193=='e') ) {
-                                                                int LA12_201 = input.LA(16);
-
-                                                                if ( (LA12_201=='d') ) {
-                                                                    int LA12_204 = input.LA(17);
-
-                                                                    if ( (LA12_204=='N') ) {
-                                                                        int LA12_207 = input.LA(18);
-
-                                                                        if ( (LA12_207=='a') ) {
-                                                                            int LA12_208 = input.LA(19);
-
-                                                                            if ( (LA12_208=='t') ) {
-                                                                                int LA12_209 = input.LA(20);
-
-                                                                                if ( (LA12_209=='u') ) {
-                                                                                    int LA12_210 = input.LA(21);
-
-                                                                                    if ( (LA12_210=='r') ) {
-                                                                                        int LA12_211 = input.LA(22);
-
-                                                                                        if ( (LA12_211=='a') ) {
-                                                                                            int LA12_212 = input.LA(23);
-
-                                                                                            if ( (LA12_212=='l') ) {
-                                                                                                int LA12_213 = input.LA(24);
-
-                                                                                                if ( ((LA12_213>='0' && LA12_213<='9')||(LA12_213>='A' && LA12_213<='Z')||LA12_213=='_'||(LA12_213>='a' && LA12_213<='z')) ) {
-                                                                                                    return 29;
-                                                                                                }
-                                                                                                else {
-                                                                                                    return 27;}
-                                                                                            }
-                                                                                            else {
-                                                                                                return 29;}
-                                                                                        }
-                                                                                        else {
-                                                                                            return 29;}
-                                                                                    }
-                                                                                    else {
-                                                                                        return 29;}
-                                                                                }
-                                                                                else {
-                                                                                    return 29;}
-                                                                            }
-                                                                            else {
-                                                                                return 29;}
-                                                                        }
-                                                                        else {
-                                                                            return 29;}
-                                                                    }
-                                                                    else {
-                                                                        return 29;}
-                                                                }
-                                                                else {
-                                                                    return 29;}
-                                                            }
-                                                            else {
-                                                                return 29;}
-                                                        }
-                                                        else {
-                                                            return 29;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                    }
-                                case 'S':
-                                    {
-                                    int LA12_138 = input.LA(9);
-
-                                    if ( (LA12_138=='t') ) {
-                                        int LA12_150 = input.LA(10);
-
-                                        if ( (LA12_150=='r') ) {
-                                            int LA12_160 = input.LA(11);
-
-                                            if ( (LA12_160=='i') ) {
-                                                int LA12_169 = input.LA(12);
-
-                                                if ( (LA12_169=='n') ) {
-                                                    int LA12_178 = input.LA(13);
-
-                                                    if ( (LA12_178=='g') ) {
-                                                        int LA12_186 = input.LA(14);
-
-                                                        if ( ((LA12_186>='0' && LA12_186<='9')||(LA12_186>='A' && LA12_186<='Z')||LA12_186=='_'||(LA12_186>='a' && LA12_186<='z')) ) {
-                                                            return 29;
-                                                        }
-                                                        else {
-                                                            return 25;}
-                                                    }
-                                                    else {
-                                                        return 29;}
-                                                }
-                                                else {
-                                                    return 29;}
-                                            }
-                                            else {
-                                                return 29;}
-                                        }
-                                        else {
-                                            return 29;}
-                                    }
-                                    else {
-                                        return 29;}
-                                    }
-                                default:
-                                    return 29;}
-
+                                if ( ((LA12_129>='0' && LA12_129<='9')||(LA12_129>='A' && LA12_129<='Z')||LA12_129=='_'||(LA12_129>='a' && LA12_129<='z')) ) {
+                                    return 31;
+                                }
+                                else {
+                                    return 21;}
                             }
                             else {
-                                return 29;}
+                                return 31;}
                         }
                         else {
-                            return 29;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
         }
         else {
-            return 29;}
+            return 31;}
     }
 
     private int mTokensHelper019() throws RecognitionException {
         int LA12_19 = input.LA(2);
 
-        if ( (LA12_19=='a') ) {
-            int LA12_51 = input.LA(3);
+        if ( (LA12_19=='o') ) {
+            int LA12_53 = input.LA(3);
 
-            if ( (LA12_51=='l') ) {
-                int LA12_69 = input.LA(4);
+            if ( (LA12_53=='o') ) {
+                int LA12_72 = input.LA(4);
 
-                if ( (LA12_69=='u') ) {
-                    int LA12_83 = input.LA(5);
+                if ( (LA12_72=='l') ) {
+                    int LA12_87 = input.LA(5);
 
-                    if ( (LA12_83=='e') ) {
-                        int LA12_97 = input.LA(6);
+                    if ( (LA12_87=='e') ) {
+                        int LA12_102 = input.LA(6);
 
-                        if ( ((LA12_97>='0' && LA12_97<='9')||(LA12_97>='A' && LA12_97<='Z')||LA12_97=='_'||(LA12_97>='a' && LA12_97<='z')) ) {
-                            return 29;
+                        if ( (LA12_102=='a') ) {
+                            int LA12_117 = input.LA(7);
+
+                            if ( (LA12_117=='n') ) {
+                                int LA12_130 = input.LA(8);
+
+                                if ( ((LA12_130>='0' && LA12_130<='9')||(LA12_130>='A' && LA12_130<='Z')||LA12_130=='_'||(LA12_130>='a' && LA12_130<='z')) ) {
+                                    return 31;
+                                }
+                                else {
+                                    return 22;}
+                            }
+                            else {
+                                return 31;}
                         }
                         else {
-                            return 24;}
+                            return 31;}
                     }
                     else {
-                        return 29;}
+                        return 31;}
                 }
                 else {
-                    return 29;}
+                    return 31;}
             }
             else {
-                return 29;}
+                return 31;}
         }
         else {
-            return 29;}
+            return 31;}
     }
 
     private int mTokensHelper020() throws RecognitionException {
         int LA12_20 = input.LA(2);
 
-        if ( ((LA12_20>='A' && LA12_20<='Z')||LA12_20=='_'||(LA12_20>='a' && LA12_20<='z')) ) {
-            return 29;
+        if ( (LA12_20=='n') ) {
+            int LA12_54 = input.LA(3);
+
+            if ( (LA12_54=='l') ) {
+                int LA12_73 = input.LA(4);
+
+                if ( (LA12_73=='i') ) {
+                    int LA12_88 = input.LA(5);
+
+                    if ( (LA12_88=='m') ) {
+                        int LA12_103 = input.LA(6);
+
+                        if ( (LA12_103=='i') ) {
+                            int LA12_118 = input.LA(7);
+
+                            if ( (LA12_118=='t') ) {
+                                int LA12_131 = input.LA(8);
+
+                                if ( (LA12_131=='e') ) {
+                                    int LA12_144 = input.LA(9);
+
+                                    if ( (LA12_144=='d') ) {
+                                        int LA12_158 = input.LA(10);
+
+                                        if ( (LA12_158=='N') ) {
+                                            int LA12_169 = input.LA(11);
+
+                                            if ( (LA12_169=='a') ) {
+                                                int LA12_179 = input.LA(12);
+
+                                                if ( (LA12_179=='t') ) {
+                                                    int LA12_189 = input.LA(13);
+
+                                                    if ( (LA12_189=='u') ) {
+                                                        int LA12_199 = input.LA(14);
+
+                                                        if ( (LA12_199=='r') ) {
+                                                            int LA12_208 = input.LA(15);
+
+                                                            if ( (LA12_208=='a') ) {
+                                                                int LA12_216 = input.LA(16);
+
+                                                                if ( (LA12_216=='l') ) {
+                                                                    int LA12_221 = input.LA(17);
+
+                                                                    if ( ((LA12_221>='0' && LA12_221<='9')||(LA12_221>='A' && LA12_221<='Z')||LA12_221=='_'||(LA12_221>='a' && LA12_221<='z')) ) {
+                                                                        return 31;
+                                                                    }
+                                                                    else {
+                                                                        return 23;}
+                                                                }
+                                                                else {
+                                                                    return 31;}
+                                                            }
+                                                            else {
+                                                                return 31;}
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                }
+                                else {
+                                    return 31;}
+                            }
+                            else {
+                                return 31;}
+                        }
+                        else {
+                            return 31;}
+                    }
+                    else {
+                        return 31;}
+                }
+                else {
+                    return 31;}
+            }
+            else {
+                return 31;}
         }
         else {
-            return 35;}
+            return 31;}
     }
 
     private int mTokensHelper021() throws RecognitionException {
-        return 29;
+        int LA12_21 = input.LA(2);
+
+        if ( (LA12_21=='i') ) {
+            int LA12_55 = input.LA(3);
+
+            if ( (LA12_55=='t') ) {
+                int LA12_74 = input.LA(4);
+
+                if ( (LA12_74=='e') ) {
+                    int LA12_89 = input.LA(5);
+
+                    if ( (LA12_89=='r') ) {
+                        int LA12_104 = input.LA(6);
+
+                        if ( (LA12_104=='a') ) {
+                            int LA12_119 = input.LA(7);
+
+                            if ( (LA12_119=='l') ) {
+                                switch ( input.LA(8) ) {
+                                case 'B':
+                                    {
+                                    int LA12_145 = input.LA(9);
+
+                                    if ( (LA12_145=='o') ) {
+                                        int LA12_159 = input.LA(10);
+
+                                        if ( (LA12_159=='o') ) {
+                                            int LA12_170 = input.LA(11);
+
+                                            if ( (LA12_170=='l') ) {
+                                                int LA12_180 = input.LA(12);
+
+                                                if ( (LA12_180=='e') ) {
+                                                    int LA12_190 = input.LA(13);
+
+                                                    if ( (LA12_190=='a') ) {
+                                                        int LA12_200 = input.LA(14);
+
+                                                        if ( (LA12_200=='n') ) {
+                                                            int LA12_209 = input.LA(15);
+
+                                                            if ( ((LA12_209>='0' && LA12_209<='9')||(LA12_209>='A' && LA12_209<='Z')||LA12_209=='_'||(LA12_209>='a' && LA12_209<='z')) ) {
+                                                                return 31;
+                                                            }
+                                                            else {
+                                                                return 28;}
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                    }
+                                case 'I':
+                                    {
+                                    int LA12_146 = input.LA(9);
+
+                                    if ( (LA12_146=='n') ) {
+                                        int LA12_160 = input.LA(10);
+
+                                        if ( (LA12_160=='t') ) {
+                                            int LA12_171 = input.LA(11);
+
+                                            if ( (LA12_171=='e') ) {
+                                                int LA12_181 = input.LA(12);
+
+                                                if ( (LA12_181=='g') ) {
+                                                    int LA12_191 = input.LA(13);
+
+                                                    if ( (LA12_191=='e') ) {
+                                                        int LA12_201 = input.LA(14);
+
+                                                        if ( (LA12_201=='r') ) {
+                                                            int LA12_210 = input.LA(15);
+
+                                                            if ( ((LA12_210>='0' && LA12_210<='9')||(LA12_210>='A' && LA12_210<='Z')||LA12_210=='_'||(LA12_210>='a' && LA12_210<='z')) ) {
+                                                                return 31;
+                                                            }
+                                                            else {
+                                                                return 24;}
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                    }
+                                case 'S':
+                                    {
+                                    int LA12_147 = input.LA(9);
+
+                                    if ( (LA12_147=='t') ) {
+                                        int LA12_161 = input.LA(10);
+
+                                        if ( (LA12_161=='r') ) {
+                                            int LA12_172 = input.LA(11);
+
+                                            if ( (LA12_172=='i') ) {
+                                                int LA12_182 = input.LA(12);
+
+                                                if ( (LA12_182=='n') ) {
+                                                    int LA12_192 = input.LA(13);
+
+                                                    if ( (LA12_192=='g') ) {
+                                                        int LA12_202 = input.LA(14);
+
+                                                        if ( ((LA12_202>='0' && LA12_202<='9')||(LA12_202>='A' && LA12_202<='Z')||LA12_202=='_'||(LA12_202>='a' && LA12_202<='z')) ) {
+                                                            return 31;
+                                                        }
+                                                        else {
+                                                            return 27;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                    }
+                                case 'U':
+                                    {
+                                    int LA12_148 = input.LA(9);
+
+                                    if ( (LA12_148=='n') ) {
+                                        int LA12_162 = input.LA(10);
+
+                                        if ( (LA12_162=='l') ) {
+                                            int LA12_173 = input.LA(11);
+
+                                            if ( (LA12_173=='i') ) {
+                                                int LA12_183 = input.LA(12);
+
+                                                if ( (LA12_183=='m') ) {
+                                                    int LA12_193 = input.LA(13);
+
+                                                    if ( (LA12_193=='i') ) {
+                                                        int LA12_203 = input.LA(14);
+
+                                                        if ( (LA12_203=='t') ) {
+                                                            int LA12_212 = input.LA(15);
+
+                                                            if ( (LA12_212=='e') ) {
+                                                                int LA12_219 = input.LA(16);
+
+                                                                if ( (LA12_219=='d') ) {
+                                                                    int LA12_222 = input.LA(17);
+
+                                                                    if ( (LA12_222=='N') ) {
+                                                                        int LA12_225 = input.LA(18);
+
+                                                                        if ( (LA12_225=='a') ) {
+                                                                            int LA12_226 = input.LA(19);
+
+                                                                            if ( (LA12_226=='t') ) {
+                                                                                int LA12_227 = input.LA(20);
+
+                                                                                if ( (LA12_227=='u') ) {
+                                                                                    int LA12_228 = input.LA(21);
+
+                                                                                    if ( (LA12_228=='r') ) {
+                                                                                        int LA12_229 = input.LA(22);
+
+                                                                                        if ( (LA12_229=='a') ) {
+                                                                                            int LA12_230 = input.LA(23);
+
+                                                                                            if ( (LA12_230=='l') ) {
+                                                                                                int LA12_231 = input.LA(24);
+
+                                                                                                if ( ((LA12_231>='0' && LA12_231<='9')||(LA12_231>='A' && LA12_231<='Z')||LA12_231=='_'||(LA12_231>='a' && LA12_231<='z')) ) {
+                                                                                                    return 31;
+                                                                                                }
+                                                                                                else {
+                                                                                                    return 29;}
+                                                                                            }
+                                                                                            else {
+                                                                                                return 31;}
+                                                                                        }
+                                                                                        else {
+                                                                                            return 31;}
+                                                                                    }
+                                                                                    else {
+                                                                                        return 31;}
+                                                                                }
+                                                                                else {
+                                                                                    return 31;}
+                                                                            }
+                                                                            else {
+                                                                                return 31;}
+                                                                        }
+                                                                        else {
+                                                                            return 31;}
+                                                                    }
+                                                                    else {
+                                                                        return 31;}
+                                                                }
+                                                                else {
+                                                                    return 31;}
+                                                            }
+                                                            else {
+                                                                return 31;}
+                                                        }
+                                                        else {
+                                                            return 31;}
+                                                    }
+                                                    else {
+                                                        return 31;}
+                                                }
+                                                else {
+                                                    return 31;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                    }
+                                case 'N':
+                                    {
+                                    int LA12_149 = input.LA(9);
+
+                                    if ( (LA12_149=='u') ) {
+                                        int LA12_163 = input.LA(10);
+
+                                        if ( (LA12_163=='l') ) {
+                                            int LA12_174 = input.LA(11);
+
+                                            if ( (LA12_174=='l') ) {
+                                                int LA12_184 = input.LA(12);
+
+                                                if ( ((LA12_184>='0' && LA12_184<='9')||(LA12_184>='A' && LA12_184<='Z')||LA12_184=='_'||(LA12_184>='a' && LA12_184<='z')) ) {
+                                                    return 31;
+                                                }
+                                                else {
+                                                    return 30;}
+                                            }
+                                            else {
+                                                return 31;}
+                                        }
+                                        else {
+                                            return 31;}
+                                    }
+                                    else {
+                                        return 31;}
+                                    }
+                                default:
+                                    return 31;}
+
+                            }
+                            else {
+                                return 31;}
+                        }
+                        else {
+                            return 31;}
+                    }
+                    else {
+                        return 31;}
+                }
+                else {
+                    return 31;}
+            }
+            else {
+                return 31;}
+        }
+        else {
+            return 31;}
     }
 
     private int mTokensHelper022() throws RecognitionException {
-        return 30;
+        int LA12_22 = input.LA(2);
+
+        if ( ((LA12_22>='A' && LA12_22<='Z')||LA12_22=='_'||(LA12_22>='a' && LA12_22<='z')) ) {
+            return 31;
+        }
+        else {
+            return 37;}
     }
 
     private int mTokensHelper023() throws RecognitionException {
-        int LA12_23 = input.LA(2);
-
-        if ( ((LA12_23>='\u0000' && LA12_23<='\uFFFE')) ) {
-            return 31;
-        }
-        else {
-            return 35;}
+        return 31;
     }
 
     private int mTokensHelper024() throws RecognitionException {
-        int LA12_24 = input.LA(2);
-
-        if ( ((LA12_24>='\u0000' && LA12_24<='\uFFFE')) ) {
-            return 31;
-        }
-        else {
-            return 35;}
+        return 32;
     }
 
     private int mTokensHelper025() throws RecognitionException {
-        switch ( input.LA(2) ) {
-        case '*':
-            {
-            return 32;
-            }
-        case '/':
-            {
-            return 33;
-            }
-        default:
-            return 35;}
+        int LA12_25 = input.LA(2);
 
+        if ( ((LA12_25>='\u0000' && LA12_25<='\uFFFE')) ) {
+            return 33;
+        }
+        else {
+            return 37;}
     }
 
     private int mTokensHelper026() throws RecognitionException {
-        return 34;
+        int LA12_26 = input.LA(2);
+
+        if ( ((LA12_26>='\u0000' && LA12_26<='\uFFFE')) ) {
+            return 33;
+        }
+        else {
+            return 37;}
     }
 
     private int mTokensHelper027() throws RecognitionException {
-        return 35;
+        switch ( input.LA(2) ) {
+        case '/':
+            {
+            return 35;
+            }
+        case '*':
+            {
+            return 34;
+            }
+        default:
+            return 37;}
+
     }
 
     private int mTokensHelper028() throws RecognitionException {
+        return 36;
+    }
+
+    private int mTokensHelper029() throws RecognitionException {
+        return 37;
+    }
+
+    private int mTokensHelper030() throws RecognitionException {
         NoViableAltException nvae =
-            new NoViableAltException("1:1: Tokens : ( T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );", 12, 0, input);
+            new NoViableAltException("1:1: Tokens : ( T11 | T12 | T13 | T14 | T15 | T16 | T17 | T18 | T19 | T20 | T21 | T22 | T23 | T24 | T25 | T26 | T27 | T28 | T29 | T30 | T31 | T32 | T33 | T34 | T35 | T36 | T37 | T38 | T39 | T40 | RULE_ID | RULE_INT | RULE_STRING | RULE_ML_COMMENT | RULE_SL_COMMENT | RULE_WS | RULE_ANY_OTHER );", 12, 0, input);
 
         throw nvae;
     }
