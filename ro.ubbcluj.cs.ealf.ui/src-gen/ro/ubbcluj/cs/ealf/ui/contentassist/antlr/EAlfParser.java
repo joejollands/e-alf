@@ -38,6 +38,7 @@ public class EAlfParser extends AbstractContentAssistParser {
 				private static final long serialVersionUID = 1L;
 				{
 					put(grammarAccess.getPackageableElementAccess().getAlternatives(), "rule__PackageableElement__Alternatives");
+					put(grammarAccess.getActivityAccess().getAlternatives_7(), "rule__Activity__Alternatives_7");
 					put(grammarAccess.getString0Access().getAlternatives(), "rule__String0__Alternatives");
 					put(grammarAccess.getEStringAccess().getAlternatives(), "rule__EString__Alternatives");
 					put(grammarAccess.getValueSpecificationAccess().getAlternatives(), "rule__ValueSpecification__Alternatives");
@@ -50,10 +51,12 @@ public class EAlfParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPackage_ImplAccess().getGroup(), "rule__Package_Impl__Group__0");
 					put(grammarAccess.getPackage_ImplAccess().getGroup_4(), "rule__Package_Impl__Group_4__0");
 					put(grammarAccess.getProperty_ImplAccess().getGroup(), "rule__Property_Impl__Group__0");
+					put(grammarAccess.getProperty_ImplAccess().getGroup_3(), "rule__Property_Impl__Group_3__0");
 					put(grammarAccess.getOperationAccess().getGroup(), "rule__Operation__Group__0");
 					put(grammarAccess.getActivityAccess().getGroup(), "rule__Activity__Group__0");
-					put(grammarAccess.getActivityAccess().getGroup_2(), "rule__Activity__Group_2__0");
-					put(grammarAccess.getActivityAccess().getGroup_7(), "rule__Activity__Group_7__0");
+					put(grammarAccess.getActivityAccess().getGroup_3(), "rule__Activity__Group_3__0");
+					put(grammarAccess.getVariableAccess().getGroup(), "rule__Variable__Group__0");
+					put(grammarAccess.getVariableAccess().getGroup_3(), "rule__Variable__Group_3__0");
 					put(grammarAccess.getStructuredActivityNodeAccess().getGroup(), "rule__StructuredActivityNode__Group__0");
 					put(grammarAccess.getClass_ImplAccess().getGroup(), "rule__Class_Impl__Group__0");
 					put(grammarAccess.getClass_ImplAccess().getGroup_4(), "rule__Class_Impl__Group_4__0");
@@ -80,11 +83,14 @@ public class EAlfParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPackage_ImplAccess().getPackagedElementAssignment_4_0(), "rule__Package_Impl__PackagedElementAssignment_4_0");
 					put(grammarAccess.getPackage_ImplAccess().getPackagedElementAssignment_4_1(), "rule__Package_Impl__PackagedElementAssignment_4_1");
 					put(grammarAccess.getProperty_ImplAccess().getNameAssignment_2(), "rule__Property_Impl__NameAssignment_2");
-					put(grammarAccess.getProperty_ImplAccess().getTypeAssignment_4(), "rule__Property_Impl__TypeAssignment_4");
+					put(grammarAccess.getProperty_ImplAccess().getTypeAssignment_3_1(), "rule__Property_Impl__TypeAssignment_3_1");
 					put(grammarAccess.getOperationAccess().getNameAssignment_2(), "rule__Operation__NameAssignment_2");
-					put(grammarAccess.getActivityAccess().getSpecificationAssignment_2_1(), "rule__Activity__SpecificationAssignment_2_1");
-					put(grammarAccess.getActivityAccess().getNameAssignment_3(), "rule__Activity__NameAssignment_3");
-					put(grammarAccess.getActivityAccess().getOwnedAttributeAssignment_7_1(), "rule__Activity__OwnedAttributeAssignment_7_1");
+					put(grammarAccess.getActivityAccess().getNameAssignment_2(), "rule__Activity__NameAssignment_2");
+					put(grammarAccess.getActivityAccess().getSpecificationAssignment_3_2(), "rule__Activity__SpecificationAssignment_3_2");
+					put(grammarAccess.getActivityAccess().getOwnedAttributeAssignment_7_0(), "rule__Activity__OwnedAttributeAssignment_7_0");
+					put(grammarAccess.getActivityAccess().getVariableAssignment_7_1(), "rule__Activity__VariableAssignment_7_1");
+					put(grammarAccess.getVariableAccess().getNameAssignment_2(), "rule__Variable__NameAssignment_2");
+					put(grammarAccess.getVariableAccess().getTypeAssignment_3_1(), "rule__Variable__TypeAssignment_3_1");
 					put(grammarAccess.getClass_ImplAccess().getNameAssignment_2(), "rule__Class_Impl__NameAssignment_2");
 					put(grammarAccess.getClass_ImplAccess().getOwnedAttributeAssignment_4_2(), "rule__Class_Impl__OwnedAttributeAssignment_4_2");
 					put(grammarAccess.getClass_ImplAccess().getOwnedAttributeAssignment_4_3_1(), "rule__Class_Impl__OwnedAttributeAssignment_4_3_1");

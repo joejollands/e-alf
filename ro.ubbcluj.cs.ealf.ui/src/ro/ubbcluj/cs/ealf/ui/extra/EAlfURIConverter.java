@@ -19,6 +19,12 @@ public class EAlfURIConverter extends ExtensibleURIConverterImpl {
 		this.eAlfResourceSet = eAlfResourceSet;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * Similar to Xtext URIConverter:
+	 * @see org.eclipse.xtext.resource.XTextResource.getURIConverter()
+	 * anonymous new ExtensibleURIConverterImpl() { ... }
+	 */
 	@Override
 	public URI normalize(URI uri) {
 		if (ClasspathUriUtil.isClasspathUri(uri)) {
@@ -35,12 +41,14 @@ public class EAlfURIConverter extends ExtensibleURIConverterImpl {
 	@Override
 	public InputStream createInputStream(URI uri, Map<?, ?> options)
 			throws IOException {
+		System.out.println("EAlfURIConverter.createInputStream - " + uri);
 		if (uri.fileExtension().equals("uml") && uri.fragment() != null) {
 			// URI normalizedURI = normalize(uri);
 			return new ByteArrayInputStream(
 					"activity EAlfURIConverter(){\n}".getBytes());
 		} else {
-			System.out.println("EAlfURIConverter.createInputStream - normal path");
+			System.out
+					.println("EAlfURIConverter.createInputStream - normal path");
 			return super.createInputStream(uri, options);
 		}
 	}
@@ -48,11 +56,13 @@ public class EAlfURIConverter extends ExtensibleURIConverterImpl {
 	@Override
 	public OutputStream createOutputStream(URI uri, Map<?, ?> options)
 			throws IOException {
+		System.out.println("EAlfURIConverter.createOutputStream - " + uri);
 		if (uri.fileExtension().equals("uml") && uri.fragment() != null) {
 			// URI normalizedURI = normalize(uri);
 			return System.out;
 		} else {
-			System.out.println("EAlfURIConverter.createOutputStream - normal path");
+			System.out
+					.println("EAlfURIConverter.createOutputStream - normal path");
 			return super.createOutputStream(uri, options);
 		}
 	}

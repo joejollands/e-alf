@@ -153,5 +153,12 @@
             id="ro.ubbcluj.cs.ealf.ui.extra.EAlfEditorInputFactory">
       </factory>
    </extension>
+   <extension
+         point="org.eclipse.emf.ecore.protocol_parser">
+      <parser
+            class="ro.ubbcluj.cs.ealf.ui.extra.EAlfProtocolResourceFactory"
+            protocolName=" ealf">
+      </parser>
+   </extension>
 
 </plugin>

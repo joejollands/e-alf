@@ -1,6 +1,5 @@
 package ro.ubbcluj.cs.ealf.ui.extra;
 
-import org.eclipse.core.resources.IFile;
 import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.ui.IElementFactory;
@@ -20,9 +19,9 @@ public class EAlfEditorInputFactory implements IElementFactory {
 	private static final String TAG_ELEMENT_URI = "elementURI"; //$NON-NLS-1$
 
 	/**
-	 * Tag for the element's owner fragment of the resource.
+	 * Tag for the main resource uri.
 	 */
-	private static final String TAG_OWNER_FRAGMENT = "ownerFragment"; //$NON-NLS-1$
+	private static final String TAG_MAIN_FILE_URI = "mainFileURI"; //$NON-NLS-1$
 
 	/**
 	 * Creates a new factory.
@@ -34,18 +33,18 @@ public class EAlfEditorInputFactory implements IElementFactory {
 	 * (non-Javadoc) Method declared on IElementFactory.
 	 */
 	public IAdaptable createElement(IMemento memento) {
-		// Get the file name.
+		String mainFileURIString = memento.getString(TAG_MAIN_FILE_URI);
 		String elementURIString = memento.getString(TAG_ELEMENT_URI);
-		String ownerFragment = memento.getString(TAG_OWNER_FRAGMENT);
 
-		if (elementURIString == null || ownerFragment == null) {
+		if (mainFileURIString == null || elementURIString == null) {
 			return null;
 		}
 
+		URI mainFileURI = URI.createURI(mainFileURIString);
 		URI elementURI = URI.createURI(elementURIString);
 
 		if (elementURI != null) {
-			return new EAlfEditorInput(elementURI, ownerFragment);
+			return new EAlfEditorInput(mainFileURI, elementURI);
 		}
 		return null;
 	}
@@ -68,9 +67,8 @@ public class EAlfEditorInputFactory implements IElementFactory {
 	 *            the file editor input
 	 */
 	public static void saveState(IMemento memento, EAlfEditorInput input) {
-		IFile file = input.getFile();
+		memento.putString(TAG_MAIN_FILE_URI, input.getMainFileURI().toString());
 		memento.putString(TAG_ELEMENT_URI, input.getElementURI().toString());
-		memento.putString(TAG_OWNER_FRAGMENT, file.getFullPath().toString());
 	}
 
 }

@@ -1,38 +1,34 @@
 package ro.ubbcluj.cs.ealf.ui.extra;
 
-import org.eclipse.core.resources.IFile;
-import org.eclipse.core.resources.IWorkspaceRoot;
-import org.eclipse.core.resources.ResourcesPlugin;
-import org.eclipse.core.runtime.Path;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IMemento;
 import org.eclipse.ui.IPersistableElement;
 import org.eclipse.ui.part.FileEditorInput;
+import org.eclipse.uml2.uml.Element;
+import org.eclipse.uml2.uml.resource.UMLResource;
+import org.eclipse.xtext.resource.XtextResource;
 
 public class EAlfEditorInput extends FileEditorInput {
 
+	private URI mainFileURI = null;
 	private URI elementURI;
-	private String ownerFragment;
 
-	public EAlfEditorInput(URI elementURI, String ownerFragment) {
-		super(getIFileFromURI(elementURI));
+	private XtextResource xtextResource;
+	private UMLResource mainUMLResource;
+
+	public EAlfEditorInput(URI mainFileURI, URI elementURI) {
+		super(EAlfUtil.getIFileFromURI(mainFileURI));
 		this.setElementURI(elementURI);
-		this.setOwnerFragment(ownerFragment);
-	}
-
-	public static IFile getIFileFromURI(URI uri) {
-		IWorkspaceRoot root = ResourcesPlugin.getWorkspace().getRoot();
-		IFile file = root.getFile(new Path(uri.toPlatformString(true)));
-		return file;
+		this.setMainFileURI(mainFileURI);
 	}
 
 	/*
 	 * (non-Javadoc) Method declared on IEditorInput.
 	 */
 	public String getName() {
-		return elementURI.fragment() == null ? elementURI.lastSegment()
-				: elementURI.lastSegment() + "#" + elementURI.fragment();
+		return elementURI.query() == null ? elementURI.lastSegment()
+				: elementURI.lastSegment() + "#" + elementURI.query();
 	}
 
 	/*
@@ -127,12 +123,36 @@ public class EAlfEditorInput extends FileEditorInput {
 		return elementURI;
 	}
 
-	public void setOwnerFragment(String ownerFragment) {
-		this.ownerFragment = ownerFragment;
+	public URI getMainFileURI() {
+		return mainFileURI;
 	}
 
-	public String getOwnerFragment() {
-		return ownerFragment;
+	public void setMainFileURI(URI mainFileURI) {
+		this.mainFileURI = mainFileURI;
+	}
+
+	public Element getElement() {
+		Element element = null;
+		if (mainUMLResource != null) {
+			element = (Element) mainUMLResource.getEObject(elementURI.query());
+		}
+		return element;
+	}
+
+	public XtextResource getXtextResource() {
+		return xtextResource;
+	}
+
+	public void setXtextResource(XtextResource xtextResource) {
+		this.xtextResource = xtextResource;
+	}
+
+	public UMLResource getMainUMLResource() {
+		return mainUMLResource;
+	}
+
+	public void setMainUMLResource(UMLResource mainUMLResource) {
+		this.mainUMLResource = mainUMLResource;
 	}
 
 }
