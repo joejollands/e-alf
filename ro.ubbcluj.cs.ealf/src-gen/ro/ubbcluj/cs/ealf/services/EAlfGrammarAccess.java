@@ -239,18 +239,19 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cPropertyKeyword_1 = (Keyword)cGroup.eContents().get(1);
 		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
 		private final RuleCall cNameString0ParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
-		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cTypeAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final CrossReference cTypeTypeCrossReference_4_0 = (CrossReference)cTypeAssignment_4.eContents().get(0);
-		private final RuleCall cTypeTypeEStringParserRuleCall_4_0_1 = (RuleCall)cTypeTypeCrossReference_4_0.eContents().get(1);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cTypeAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final CrossReference cTypeTypeCrossReference_3_1_0 = (CrossReference)cTypeAssignment_3_1.eContents().get(0);
+		private final RuleCall cTypeTypeEStringParserRuleCall_3_1_0_1 = (RuleCall)cTypeTypeCrossReference_3_1_0.eContents().get(1);
 		
 		//Property_Impl returns uml::Property:
 		//	{uml::Property} // (visibility=VisibilityKind)? ('static' isStatic=Boolean)?
-		//	"property" name=String0 ":" type=[uml::Type|EString];
+		//	"property" name=String0 (":" type=[uml::Type|EString])?;
 		public ParserRule getRule() { return rule; }
 
 		//{uml::Property} // (visibility=VisibilityKind)? ('static' isStatic=Boolean)?
-		//"property" name=String0 ":" type=[uml::Type|EString]
+		//"property" name=String0 (":" type=[uml::Type|EString])?
 		public Group getGroup() { return cGroup; }
 
 		//{uml::Property}
@@ -266,17 +267,20 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 		//String0
 		public RuleCall getNameString0ParserRuleCall_2_0() { return cNameString0ParserRuleCall_2_0; }
 
+		//(":" type=[uml::Type|EString])?
+		public Group getGroup_3() { return cGroup_3; }
+
 		//":"
-		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
 
 		//type=[uml::Type|EString]
-		public Assignment getTypeAssignment_4() { return cTypeAssignment_4; }
+		public Assignment getTypeAssignment_3_1() { return cTypeAssignment_3_1; }
 
 		//[uml::Type|EString]
-		public CrossReference getTypeTypeCrossReference_4_0() { return cTypeTypeCrossReference_4_0; }
+		public CrossReference getTypeTypeCrossReference_3_1_0() { return cTypeTypeCrossReference_3_1_0; }
 
 		//EString
-		public RuleCall getTypeTypeEStringParserRuleCall_4_0_1() { return cTypeTypeEStringParserRuleCall_4_0_1; }
+		public RuleCall getTypeTypeEStringParserRuleCall_3_1_0_1() { return cTypeTypeEStringParserRuleCall_3_1_0_1; }
 	}
 
 	public class OperationElements extends AbstractParserRuleElementFinder {
@@ -323,29 +327,34 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Action cActivityAction_0 = (Action)cGroup.eContents().get(0);
 		private final Keyword cActivityKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cForKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cSpecificationAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final CrossReference cSpecificationOperationCrossReference_2_1_0 = (CrossReference)cSpecificationAssignment_2_1.eContents().get(0);
-		private final RuleCall cSpecificationOperationIDTerminalRuleCall_2_1_0_1 = (RuleCall)cSpecificationOperationCrossReference_2_1_0.eContents().get(1);
-		private final Assignment cNameAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cNameString0ParserRuleCall_3_0 = (RuleCall)cNameAssignment_3.eContents().get(0);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameString0ParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cLeftSquareBracketKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Keyword cSpecificationForKeyword_3_1 = (Keyword)cGroup_3.eContents().get(1);
+		private final Assignment cSpecificationAssignment_3_2 = (Assignment)cGroup_3.eContents().get(2);
+		private final CrossReference cSpecificationOperationCrossReference_3_2_0 = (CrossReference)cSpecificationAssignment_3_2.eContents().get(0);
+		private final RuleCall cSpecificationOperationIDTerminalRuleCall_3_2_0_1 = (RuleCall)cSpecificationOperationCrossReference_3_2_0.eContents().get(1);
+		private final Keyword cRightSquareBracketKeyword_3_3 = (Keyword)cGroup_3.eContents().get(3);
 		private final Keyword cLeftParenthesisKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Keyword cRightParenthesisKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		private final Keyword cLeftCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
-		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
-		private final Keyword cActionKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
-		private final Assignment cOwnedAttributeAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
-		private final RuleCall cOwnedAttributePropertyParserRuleCall_7_1_0 = (RuleCall)cOwnedAttributeAssignment_7_1.eContents().get(0);
+		private final Alternatives cAlternatives_7 = (Alternatives)cGroup.eContents().get(7);
+		private final Assignment cOwnedAttributeAssignment_7_0 = (Assignment)cAlternatives_7.eContents().get(0);
+		private final RuleCall cOwnedAttributePropertyParserRuleCall_7_0_0 = (RuleCall)cOwnedAttributeAssignment_7_0.eContents().get(0);
+		private final Assignment cVariableAssignment_7_1 = (Assignment)cAlternatives_7.eContents().get(1);
+		private final RuleCall cVariableVariableParserRuleCall_7_1_0 = (RuleCall)cVariableAssignment_7_1.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Activity returns uml::Activity:
-		//	{uml::Activity} "activity" ("for" specification=[uml::Operation])? // (visibility=VisibilityKind)?
-		//	name=String0 "(" ")" "{" ("action" ownedAttribute+=Property)* "}";
+		//	{uml::Activity} "activity" // (visibility=VisibilityKind)?
+		//	name=String0 ("[" "specification for" specification=[uml::Operation] "]")? "(" ")" "{" (ownedAttribute+=Property |
+		//	variable+=Variable)* "}";
 		public ParserRule getRule() { return rule; }
 
-		//{uml::Activity} "activity" ("for" specification=[uml::Operation])? // (visibility=VisibilityKind)?
-		//name=String0 "(" ")" "{" ("action" ownedAttribute+=Property)* "}"
+		//{uml::Activity} "activity" // (visibility=VisibilityKind)?
+		//name=String0 ("[" "specification for" specification=[uml::Operation] "]")? "(" ")" "{" (ownedAttribute+=Property |
+		//variable+=Variable)* "}"
 		public Group getGroup() { return cGroup; }
 
 		//{uml::Activity}
@@ -354,27 +363,33 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 		//"activity"
 		public Keyword getActivityKeyword_1() { return cActivityKeyword_1; }
 
-		//("for" specification=[uml::Operation])?
-		public Group getGroup_2() { return cGroup_2; }
-
-		//"for"
-		public Keyword getForKeyword_2_0() { return cForKeyword_2_0; }
-
-		//specification=[uml::Operation]
-		public Assignment getSpecificationAssignment_2_1() { return cSpecificationAssignment_2_1; }
-
-		//[uml::Operation]
-		public CrossReference getSpecificationOperationCrossReference_2_1_0() { return cSpecificationOperationCrossReference_2_1_0; }
-
-		//ID
-		public RuleCall getSpecificationOperationIDTerminalRuleCall_2_1_0_1() { return cSpecificationOperationIDTerminalRuleCall_2_1_0_1; }
-
 		//// (visibility=VisibilityKind)?
 		//name=String0
-		public Assignment getNameAssignment_3() { return cNameAssignment_3; }
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
 
 		//String0
-		public RuleCall getNameString0ParserRuleCall_3_0() { return cNameString0ParserRuleCall_3_0; }
+		public RuleCall getNameString0ParserRuleCall_2_0() { return cNameString0ParserRuleCall_2_0; }
+
+		//("[" "specification for" specification=[uml::Operation] "]")?
+		public Group getGroup_3() { return cGroup_3; }
+
+		//"["
+		public Keyword getLeftSquareBracketKeyword_3_0() { return cLeftSquareBracketKeyword_3_0; }
+
+		//"specification for"
+		public Keyword getSpecificationForKeyword_3_1() { return cSpecificationForKeyword_3_1; }
+
+		//specification=[uml::Operation]
+		public Assignment getSpecificationAssignment_3_2() { return cSpecificationAssignment_3_2; }
+
+		//[uml::Operation]
+		public CrossReference getSpecificationOperationCrossReference_3_2_0() { return cSpecificationOperationCrossReference_3_2_0; }
+
+		//ID
+		public RuleCall getSpecificationOperationIDTerminalRuleCall_3_2_0_1() { return cSpecificationOperationIDTerminalRuleCall_3_2_0_1; }
+
+		//"]"
+		public Keyword getRightSquareBracketKeyword_3_3() { return cRightSquareBracketKeyword_3_3; }
 
 		//"("
 		public Keyword getLeftParenthesisKeyword_4() { return cLeftParenthesisKeyword_4; }
@@ -385,20 +400,71 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_6() { return cLeftCurlyBracketKeyword_6; }
 
-		//("action" ownedAttribute+=Property)*
-		public Group getGroup_7() { return cGroup_7; }
-
-		//"action"
-		public Keyword getActionKeyword_7_0() { return cActionKeyword_7_0; }
+		//(ownedAttribute+=Property | variable+=Variable)*
+		public Alternatives getAlternatives_7() { return cAlternatives_7; }
 
 		//ownedAttribute+=Property
-		public Assignment getOwnedAttributeAssignment_7_1() { return cOwnedAttributeAssignment_7_1; }
+		public Assignment getOwnedAttributeAssignment_7_0() { return cOwnedAttributeAssignment_7_0; }
 
 		//Property
-		public RuleCall getOwnedAttributePropertyParserRuleCall_7_1_0() { return cOwnedAttributePropertyParserRuleCall_7_1_0; }
+		public RuleCall getOwnedAttributePropertyParserRuleCall_7_0_0() { return cOwnedAttributePropertyParserRuleCall_7_0_0; }
+
+		//variable+=Variable
+		public Assignment getVariableAssignment_7_1() { return cVariableAssignment_7_1; }
+
+		//Variable
+		public RuleCall getVariableVariableParserRuleCall_7_1_0() { return cVariableVariableParserRuleCall_7_1_0; }
 
 		//"}"
 		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
+	}
+
+	public class VariableElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Variable");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Action cVariableAction_0 = (Action)cGroup.eContents().get(0);
+		private final Keyword cVariableKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Assignment cNameAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cNameString0ParserRuleCall_2_0 = (RuleCall)cNameAssignment_2.eContents().get(0);
+		private final Group cGroup_3 = (Group)cGroup.eContents().get(3);
+		private final Keyword cColonKeyword_3_0 = (Keyword)cGroup_3.eContents().get(0);
+		private final Assignment cTypeAssignment_3_1 = (Assignment)cGroup_3.eContents().get(1);
+		private final CrossReference cTypeTypeCrossReference_3_1_0 = (CrossReference)cTypeAssignment_3_1.eContents().get(0);
+		private final RuleCall cTypeTypeEStringParserRuleCall_3_1_0_1 = (RuleCall)cTypeTypeCrossReference_3_1_0.eContents().get(1);
+		
+		//Variable returns uml::Variable:
+		//	{uml::Variable} "variable" name=String0 (":" type=[uml::Type|EString])?;
+		public ParserRule getRule() { return rule; }
+
+		//{uml::Variable} "variable" name=String0 (":" type=[uml::Type|EString])?
+		public Group getGroup() { return cGroup; }
+
+		//{uml::Variable}
+		public Action getVariableAction_0() { return cVariableAction_0; }
+
+		//"variable"
+		public Keyword getVariableKeyword_1() { return cVariableKeyword_1; }
+
+		//name=String0
+		public Assignment getNameAssignment_2() { return cNameAssignment_2; }
+
+		//String0
+		public RuleCall getNameString0ParserRuleCall_2_0() { return cNameString0ParserRuleCall_2_0; }
+
+		//(":" type=[uml::Type|EString])?
+		public Group getGroup_3() { return cGroup_3; }
+
+		//":"
+		public Keyword getColonKeyword_3_0() { return cColonKeyword_3_0; }
+
+		//type=[uml::Type|EString]
+		public Assignment getTypeAssignment_3_1() { return cTypeAssignment_3_1; }
+
+		//[uml::Type|EString]
+		public CrossReference getTypeTypeCrossReference_3_1_0() { return cTypeTypeCrossReference_3_1_0; }
+
+		//EString
+		public RuleCall getTypeTypeEStringParserRuleCall_3_1_0_1() { return cTypeTypeEStringParserRuleCall_3_1_0_1; }
 	}
 
 	public class StructuredActivityNodeElements extends AbstractParserRuleElementFinder {
@@ -1141,6 +1207,7 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 	private Property_ImplElements pProperty_Impl;
 	private OperationElements pOperation;
 	private ActivityElements pActivity;
+	private VariableElements pVariable;
 	private StructuredActivityNodeElements pStructuredActivityNode;
 	private Class_ImplElements pClass_Impl;
 	private IntegerElements pInteger;
@@ -1274,7 +1341,7 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 
 	//Property_Impl returns uml::Property:
 	//	{uml::Property} // (visibility=VisibilityKind)? ('static' isStatic=Boolean)?
-	//	"property" name=String0 ":" type=[uml::Type|EString];
+	//	"property" name=String0 (":" type=[uml::Type|EString])?;
 	public Property_ImplElements getProperty_ImplAccess() {
 		return (pProperty_Impl != null) ? pProperty_Impl : (pProperty_Impl = new Property_ImplElements());
 	}
@@ -1295,14 +1362,25 @@ public class EAlfGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Activity returns uml::Activity:
-	//	{uml::Activity} "activity" ("for" specification=[uml::Operation])? // (visibility=VisibilityKind)?
-	//	name=String0 "(" ")" "{" ("action" ownedAttribute+=Property)* "}";
+	//	{uml::Activity} "activity" // (visibility=VisibilityKind)?
+	//	name=String0 ("[" "specification for" specification=[uml::Operation] "]")? "(" ")" "{" (ownedAttribute+=Property |
+	//	variable+=Variable)* "}";
 	public ActivityElements getActivityAccess() {
 		return (pActivity != null) ? pActivity : (pActivity = new ActivityElements());
 	}
 	
 	public ParserRule getActivityRule() {
 		return getActivityAccess().getRule();
+	}
+
+	//Variable returns uml::Variable:
+	//	{uml::Variable} "variable" name=String0 (":" type=[uml::Type|EString])?;
+	public VariableElements getVariableAccess() {
+		return (pVariable != null) ? pVariable : (pVariable = new VariableElements());
+	}
+	
+	public ParserRule getVariableRule() {
+		return getVariableAccess().getRule();
 	}
 
 	//StructuredActivityNode returns uml::StructuredActivityNode:

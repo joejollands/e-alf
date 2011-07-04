@@ -42,7 +42,7 @@ Package_Impl returns uml::Package:
 Property_Impl returns uml::Property:
 	{uml::Property}
 	// (visibility=VisibilityKind)? ('static' isStatic=Boolean)?
-	'property' name=String0 ":" type=[uml::Type|EString];
+	'property' name=String0 (":" type=[uml::Type|EString])?;
 
 Operation returns uml::Operation:
 	{uml::Operation}
@@ -54,14 +54,21 @@ Operation returns uml::Operation:
 Activity returns uml::Activity:
 	{uml::Activity}
 	'activity'
-	('for' specification=[uml::Operation])?
 	// (visibility=VisibilityKind)?
 	name=String0
+	('[''specification for' specification=[uml::Operation] ']')?
 	'('
     ')'
     '{'
-       	('action' ownedAttribute+=Property)*
+       	(ownedAttribute+=Property
+       	|
+       	variable+=Variable)*
     '}';
+
+Variable returns uml::Variable:
+	{uml::Variable}
+	'variable'
+	name=String0  (":" type=[uml::Type])?;
 
 StructuredActivityNode returns uml::StructuredActivityNode:
 	{uml::StructuredActivityNode}
