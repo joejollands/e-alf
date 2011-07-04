@@ -7,7 +7,14 @@ import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IWorkspaceRoot;
 import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.Path;
+import org.eclipse.emf.common.command.CompoundCommand;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.edit.command.AddCommand;
+import org.eclipse.emf.edit.command.RemoveCommand;
 import org.eclipse.emf.edit.domain.EditingDomain;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.ui.IEditorPart;
@@ -24,6 +31,8 @@ import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.Operation;
 import org.eclipse.uml2.uml.UMLFactory;
 import org.eclipse.uml2.uml.editor.presentation.UMLEditor;
+import org.eclipse.uml2.uml.resource.UMLResource;
+import org.eclipse.xtext.ui.editor.XtextEditor;
 
 public class EAlfUtil {
 
@@ -47,7 +56,8 @@ public class EAlfUtil {
 			IWorkbenchPage page = win.getActivePage();
 			editor = page.getActiveEditor();
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println("EAlfUtil - No active editor");
+			// e.printStackTrace();
 		}
 		return editor;
 	}
@@ -56,6 +66,14 @@ public class EAlfUtil {
 		IEditorPart editor = getActiveEditor();
 		if (editor instanceof UMLEditor) {
 			return (UMLEditor) editor;
+		}
+		return null;
+	}
+
+	public static XtextEditor getActiveEditorAsXtextEditor() {
+		IEditorPart editor = getActiveEditor();
+		if (editor instanceof XtextEditor) {
+			return (XtextEditor) editor;
 		}
 		return null;
 	}
@@ -154,6 +172,39 @@ public class EAlfUtil {
 		MessageDialog.openInformation(
 				HandlerUtil.getActiveWorkbenchWindow(event).getShell(),
 				"Info Message", message);
+	}
+
+	public static void controlActivity(UMLEditor umlEditor, Activity activity,
+			Comment comment, URI elementURI) {
+		EditingDomain editingDomain = umlEditor.getEditingDomain();
+		ResourceSet resourceSet = comment.eResource().getResourceSet();
+		Resource elementResource = resourceSet.getResource(elementURI, true);
+		if (elementResource == null) {
+			System.out.println("Error controlling resource " + elementURI);
+			return;
+		}
+		EList<EObject> contents = elementResource.getContents();
+		CompoundCommand command = new CompoundCommand("Control activity "
+				+ elementURI);
+		if (contents.size() > 0) {
+			command.append(new RemoveCommand(editingDomain, elementResource
+					.getContents(), elementResource.getContents()));
+		}
+		command.append(new AddCommand(editingDomain, elementResource
+				.getContents(), activity));
+		editingDomain.getCommandStack().execute(command);
+		umlEditor.doSave(null);
+
+	}
+
+	public static void visit(UMLResource umlResource, EList<EObject> contents) {
+		if (contents != null) {
+			for (int i = 0; i < contents.size(); i++) {
+				EObject o = contents.get(i);
+				System.out.println(umlResource.getID(o) + " " + o);
+				visit(umlResource, o.eContents());
+			}
+		}
 	}
 
 }

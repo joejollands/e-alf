@@ -21,7 +21,7 @@ public class EAlfResourceForIEditorInputFactory extends
 
 			URI elementURI = ealfEditorInput.getElementURI();
 
-			configureResourceSet(resourceSet, ealfEditorInput.getMainFileURI());
+			// configureResourceSet(resourceSet, ealfEditorInput.getMainFileURI());
 
 			XtextResource xtextResource = (XtextResource) resourceSet
 					.createResource(elementURI, null);

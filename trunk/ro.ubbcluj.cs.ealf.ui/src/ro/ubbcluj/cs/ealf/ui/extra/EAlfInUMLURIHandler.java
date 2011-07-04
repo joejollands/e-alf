@@ -12,19 +12,26 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.impl.PlatformResourceURIHandlerImpl;
 import org.eclipse.emf.edit.domain.EditingDomain;
+import org.eclipse.ui.IEditorSite;
 import org.eclipse.uml2.common.edit.command.ChangeCommand;
 import org.eclipse.uml2.uml.Comment;
-import org.eclipse.uml2.uml.editor.presentation.UMLEditor;
 import org.eclipse.uml2.uml.resource.UMLResource;
 
 public class EAlfInUMLURIHandler extends PlatformResourceURIHandlerImpl {
 
-	private UMLEditor umlEditor;
+	private IEditorSite editorSite;
+	private EditingDomain editingDomain;
 	private UMLResource umlResource;
 
-	public EAlfInUMLURIHandler(UMLEditor umlEditor, UMLResource umlResource) {
+	public EAlfInUMLURIHandler(IEditorSite editorSite,
+			EditingDomain editingDomain, UMLResource umlResource) {
+		this.editorSite = editorSite;
+		this.editingDomain = editingDomain;
 		this.umlResource = umlResource;
-		this.umlEditor = umlEditor;
+	}
+
+	public EAlfInUMLURIHandler(UMLResource umlResource) {
+		this.umlResource = umlResource;
 	}
 
 	private Comment findComment(EList<EObject> contents, String commentID) {
@@ -51,7 +58,9 @@ public class EAlfInUMLURIHandler extends PlatformResourceURIHandlerImpl {
 		EList<EObject> contents = umlResource.getContents().get(0).eContents();
 		comment = findComment(contents, uri.query());
 		if (comment == null) {
-			System.out.println("Couldn't find comment for " + uri);
+			System.out
+					.println("EAlfInUMLURIHandler - Couldn't find comment for "
+							+ uri);
 		}
 		// String id = umlResource.getID(o);
 		return comment;
@@ -62,7 +71,9 @@ public class EAlfInUMLURIHandler extends PlatformResourceURIHandlerImpl {
 		if (uri.scheme().equals("ealf") && uri.fileExtension().equals("uml")
 				&& uri.query() != null) {
 			// System.out.println("EAlfURIHandler.canHandle " + uri);
-			return true;
+			if (getComment(uri) != null) {
+				return true;
+			}
 		}
 		return false;
 	}
@@ -71,7 +82,11 @@ public class EAlfInUMLURIHandler extends PlatformResourceURIHandlerImpl {
 	public InputStream createInputStream(URI uri, Map<?, ?> options)
 			throws IOException {
 		Comment comment = getComment(uri);
-		return new ByteArrayInputStream(comment.getBody().getBytes());
+		if (comment != null && comment.getBody() != null) {
+			return new ByteArrayInputStream(comment.getBody().getBytes());
+		} else {
+			return null;
+		}
 	}
 
 	@Override
@@ -82,29 +97,34 @@ public class EAlfInUMLURIHandler extends PlatformResourceURIHandlerImpl {
 			public void close() throws IOException {
 				super.close();
 				final String content = toString();
-
-				umlEditor.getEditorSite().getShell().getDisplay()
-						.asyncExec(new Runnable() {
-							@Override
-							public void run() {
-								EditingDomain editingDomain = umlEditor
-										.getEditingDomain();
-								editingDomain.getCommandStack().execute(
-										new ChangeCommand(
-												editingDomain,
-												new Runnable() {
-													public void run() {
-														getComment(uri)
-																.setBody(
-																		content);
-													}
-												},
-												"Saved Activity text in comment"));
-								umlEditor.doSave(null);
-							}
-						});
-
-				// umlResource.save(null);
+				if (editorSite == null) {
+					editorSite = EAlfUtil.getActiveEditor().getEditorSite();
+				}
+				if (editorSite == null) {
+					System.out
+							.println("EAlfInUMLURIHandler - editorSite is null");
+					getComment(uri).setBody(content);
+				} else {
+					editorSite.getShell().getDisplay()
+							.asyncExec(new Runnable() {
+								@Override
+								public void run() {
+									editingDomain.getCommandStack().execute(
+											new ChangeCommand(
+													editingDomain,
+													new Runnable() {
+														public void run() {
+															getComment(uri)
+																	.setBody(
+																			content);
+														}
+													},
+													"Saved Activity text in comment"));
+									// umlEditor.doSave(null);
+								}
+							});
+					// umlResource.save(null);
+				}
 			}
 		};
 	}
