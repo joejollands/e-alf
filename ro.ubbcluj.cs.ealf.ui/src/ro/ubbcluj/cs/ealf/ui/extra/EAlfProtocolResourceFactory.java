@@ -8,8 +8,10 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.Resource.Factory;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.URIConverter;
 import org.eclipse.emf.ecore.resource.URIHandler;
 import org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl;
+import org.eclipse.uml2.uml.Element;
 import org.eclipse.uml2.uml.editor.presentation.UMLEditor;
 import org.eclipse.uml2.uml.resource.UMLResource;
 import org.eclipse.xtext.resource.XtextResource;
@@ -28,20 +30,36 @@ public class EAlfProtocolResourceFactory implements Factory {
 				.createResource(uri);
 
 		UMLEditor umlEditor = EAlfUtil.getActiveEditorAsUMLEditor();
-		ResourceSet resourceSet = umlEditor.getEditingDomain().getResourceSet();
-		URI umlResourceURI = EAlfUtil.getMainUMLURI(uri);
-		UMLResource umlResource = (UMLResource) resourceSet.getResource(
-				umlResourceURI, true);
+		if (umlEditor != null) {
+			// ealf resource to be created inside an UMLEditor
+			// we need to register the handler with the UML resource set
+			ResourceSet resourceSet = umlEditor.getEditingDomain()
+					.getResourceSet();
+			URI umlResourceURI = EAlfUtil.getMainUMLURI(uri);
+			UMLResource umlResource = (UMLResource) resourceSet.getResource(
+					umlResourceURI, true);
 
-		// for (Iterator<EObject> iterator = umlResource.getAllContents();
-		// iterator
-		// .hasNext();) {
-		// EObject eobj = iterator.next();
-		// System.out.println(umlResource.getURIFragment(eobj) + " " + eobj);
-		// }
+			registerURIHandler(resourceSet.getURIConverter(), umlEditor,
+					umlResource);
 
-		EList<URIHandler> uriHandlers = resourceSet.getURIConverter()
-				.getURIHandlers();
+			registerUMLCommentsDeleteListener(umlResource);
+		} else {
+			System.out
+					.println("EAlfProtocolResourceFactory - UMLEditor is null");
+			// return null;
+		}
+
+		return xtextResource;
+	}
+
+	private void registerUMLCommentsDeleteListener(UMLResource umlResource) {
+		EAlfUMLCommentsListener listener = new EAlfUMLCommentsListener();
+		listener.observeElement((Element) umlResource.getContents().get(0));
+	}
+
+	private void registerURIHandler(URIConverter uriConverter,
+			UMLEditor umlEditor, UMLResource umlResource) {
+		EList<URIHandler> uriHandlers = uriConverter.getURIHandlers();
 		boolean uriHandlerExists = false;
 		for (Iterator<URIHandler> iterator = uriHandlers.iterator(); iterator
 				.hasNext();) {
@@ -52,10 +70,9 @@ public class EAlfProtocolResourceFactory implements Factory {
 		}
 		if (!uriHandlerExists) {
 			EAlfInUMLURIHandler ealfURIHandler = new EAlfInUMLURIHandler(
-					umlEditor, umlResource);
-			resourceSet.getURIConverter().getURIHandlers()
-					.add(0, ealfURIHandler);
+					umlEditor.getEditorSite(), umlEditor.getEditingDomain(),
+					umlResource);
+			uriConverter.getURIHandlers().add(0, ealfURIHandler);
 		}
-		return xtextResource;
 	}
 }
