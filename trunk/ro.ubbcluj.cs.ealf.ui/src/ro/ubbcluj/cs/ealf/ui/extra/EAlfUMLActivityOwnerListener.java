@@ -59,7 +59,8 @@ public class EAlfUMLActivityOwnerListener extends AdapterImpl {
 				owner.getOwnedBehaviors().remove(oldActivity);
 				System.out.println(oldActivity.eResource() + " "
 						+ oldActivity.getOwner());
-			} else if (n.getEventType() == Notification.ADD) {
+			} else if (n.getNewValue() instanceof Activity
+					&& n.getEventType() == Notification.ADD) {
 				// resolve added activity
 				Adapter[] adapters = new Adapter[resource.eAdapters().size()];
 				resource.eAdapters().toArray(adapters);

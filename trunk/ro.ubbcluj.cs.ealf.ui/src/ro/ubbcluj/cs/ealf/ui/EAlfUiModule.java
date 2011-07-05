@@ -6,11 +6,9 @@ package ro.ubbcluj.cs.ealf.ui;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.eclipse.xtext.ui.editor.model.IResourceForEditorInputFactory;
 import org.eclipse.xtext.ui.editor.model.XtextDocumentProvider;
-import org.eclipse.xtext.ui.resource.IResourceSetProvider;
 
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfCrossReferenceSerializer;
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceForIEditorInputFactory;
-import ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider;
 import ro.ubbcluj.cs.ealf.ui.extra.EAlfXtextDocumentProvider;
 
 /**
@@ -32,11 +30,7 @@ public class EAlfUiModule extends ro.ubbcluj.cs.ealf.ui.AbstractEAlfUiModule {
 		return EAlfResourceForIEditorInputFactory.class;
 	}
 
-	// contributed by ro.ubbcluj.cs.ealf.ui.extra.EAlfResourceSetProvider
-	public Class<? extends IResourceSetProvider> bindIResourceSetProvider() {
-		return EAlfResourceSetProvider.class;
-	}
-
+	// contributed by ro.ubbcluj.cs.ealf.ui.extra.EAlfCrossReferenceSerializer
 	public Class<? extends org.eclipse.xtext.parsetree.reconstr.ITokenSerializer.ICrossReferenceSerializer> bindICrossReferenceSerializer() {
 		return EAlfCrossReferenceSerializer.class;
 	}

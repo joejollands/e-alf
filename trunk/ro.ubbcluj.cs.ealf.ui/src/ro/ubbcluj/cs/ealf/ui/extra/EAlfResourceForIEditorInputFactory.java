@@ -4,6 +4,7 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.xtext.resource.XtextResource;
+import org.eclipse.xtext.resource.XtextResourceSet;
 import org.eclipse.xtext.ui.editor.model.JavaClassPathResourceForIEditorInputFactory;
 
 public class EAlfResourceForIEditorInputFactory extends
@@ -15,13 +16,13 @@ public class EAlfResourceForIEditorInputFactory extends
 				+ editorInput.getClass().getName());
 		if (editorInput instanceof EAlfEditorInput) {
 			EAlfEditorInput ealfEditorInput = (EAlfEditorInput) editorInput;
-			EAlfResourceSet resourceSet = (EAlfResourceSet) getResourceSetProvider()
+			XtextResourceSet resourceSet = (XtextResourceSet) getResourceSetProvider()
 					.get(ealfEditorInput.getFile().getProject());
-			resourceSet.setEditorInput(ealfEditorInput);
 
 			URI elementURI = ealfEditorInput.getElementURI();
 
-			// configureResourceSet(resourceSet, ealfEditorInput.getMainFileURI());
+			// configureResourceSet(resourceSet,
+			// ealfEditorInput.getMainFileURI());
 
 			XtextResource xtextResource = (XtextResource) resourceSet
 					.createResource(elementURI, null);
