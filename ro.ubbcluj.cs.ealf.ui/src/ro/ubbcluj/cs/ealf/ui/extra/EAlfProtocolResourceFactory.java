@@ -1,9 +1,7 @@
 package ro.ubbcluj.cs.ealf.ui.extra;
 
-import java.util.Iterator;
 import java.util.Map;
 
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.Resource.Factory;
@@ -38,11 +36,12 @@ public class EAlfProtocolResourceFactory implements Factory {
 			URI umlResourceURI = EAlfUtil.getMainUMLURI(uri);
 			UMLResource umlResource = (UMLResource) resourceSet.getResource(
 					umlResourceURI, true);
+			if (resourceSet.getResources().indexOf(umlResource) == 0) {
+				registerURIHandler(resourceSet.getURIConverter(), umlEditor,
+						umlResource);
 
-			registerURIHandler(resourceSet.getURIConverter(), umlEditor,
-					umlResource);
-
-			registerUMLCommentsDeleteListener(umlResource);
+				registerUMLCommentsDeleteListener(umlResource);
+			}
 		} else {
 			System.out
 					.println("EAlfProtocolResourceFactory - UMLEditor is null");
@@ -59,13 +58,11 @@ public class EAlfProtocolResourceFactory implements Factory {
 
 	private void registerURIHandler(URIConverter uriConverter,
 			UMLEditor umlEditor, UMLResource umlResource) {
-		EList<URIHandler> uriHandlers = uriConverter.getURIHandlers();
 		boolean uriHandlerExists = false;
-		for (Iterator<URIHandler> iterator = uriHandlers.iterator(); iterator
-				.hasNext();) {
-			URIHandler uriHandler = iterator.next();
+		for (URIHandler uriHandler : uriConverter.getURIHandlers()) {
 			if (uriHandler instanceof EAlfInUMLURIHandler) {
 				uriHandlerExists = true;
+				break;
 			}
 		}
 		if (!uriHandlerExists) {
